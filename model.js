@@ -18,7 +18,6 @@ const model = {
     loggedInAs: "T2",
   },
 
-
   inputs: {
     search: "",
 
@@ -93,7 +92,7 @@ const model = {
         instock: true,
       },
     ],
-    logo: "... .wordart",
+    logo: "https://educationaltechnology.net/wp-content/uploads/2019/12/albert-bandura.jpg",
   },
 };
 
