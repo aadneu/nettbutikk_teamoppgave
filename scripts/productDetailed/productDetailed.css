@@ -1,0 +1,23 @@
+.productBox{
+    border: 2px solid;
+    width: 1000px;
+    height: 1000px;
+}
+.title{
+    position: relative;
+    left: 10px;
+    font-size: 50px;
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+.description{
+    position: relative;
+    left: 350px;
+    font-size: 15px;
+}
+.price{
+    position: relative;
+    left: 350px;
+    font-size: 15px;
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+

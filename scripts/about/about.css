@@ -1,0 +1,67 @@
+.boxes{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.overskrift{
+    font-size: xx-large;
+    font-weight: 900;
+    color: black;
+    border: 2px solid black;
+    width: 150px;
+    margin: 5px;
+    padding: 0px;
+    height: 40px;
+    
+}
+
+.box1{
+    border: 2px solid black;
+    width: 290px;
+    height: 40px;
+    position: absolute;
+    top: 1px;
+}
+.box2{
+    border: 2px solid black;
+    width: 290px;
+    height: 100px;
+    top: 40px;
+    left: -0.6%;
+    position: absolute;
+}
+.box3{
+    border: 2px solid black;
+    width: 290px;
+    height: 40px;
+    top: 140px;
+    left: -0.9%;
+    position: absolute;
+}
+
+.box5{
+    border: 2px solid black;
+    width: 290px;
+    height: 100px;
+    top: 224px;
+    left: -0.8%;
+    position: absolute;
+}
+.box6{
+    border: 2px solid black;
+    width: 290px;
+    height: 100px;
+    top: 387px;
+    left: -0.8%;
+    position: absolute;
+    
+}
+.box7{
+    border: 5px solid black;
+    width: 300px;
+    height: 500px;
+    top: 480px;
+    position: absolute;
+}
+

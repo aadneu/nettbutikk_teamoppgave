@@ -2,9 +2,26 @@ let app = document.getElementById("app");
 
 viewApp();
 function viewApp() {
-	let html = ``;
-	html += createHeaderHTML();
+	let html = /*HTML*/ `
+    <div id='page'>
+        <div id='header'>HEADER${createHeaderHTML()}</div>
+        <div id='meny'><div>
+      <button>Hjem</button>
+      <button>Produkter</button>
+      <button>Om oss</button>
+    </div></div>
+        <div id='left'>LEFT</div>
+        <div id='right'>RIGHT</div>
+        <div id='innhold'>${pageView()}</div>
+    </div>
+        <div id='footer'>Ferdsel på eget ansvar</div>
+    `;
 
+	app.innerHTML = html;
+}
+
+function pageView() {
+	let html = ``;
 	if (model.app.currentView == "about") {
 		html += aboutView();
 	} else if (model.app.currentView == "main") {
@@ -16,22 +33,17 @@ function viewApp() {
 	} else if (model.app.currentView == "productList") {
 		html += productListView();
 	}
-
-	app.innerHTML = html;
+	return html;
 }
 
 function createHeaderHTML() {
 	return /*HTML*/ `
     <image src='${model.data.logo}'>
-    <input type='text' placeholder='Søk'>
+    <input id='search' type='text' placeholder='Søk'>
     <button>🔍</button>
     <button>*shoppingcart icon*</button>
     <button>*Registrer icon*</button>
     <button>*Login Icon*</button> <br>
-    <div>
-      <button>Hjem</button>
-      <button>Produkter</button>
-      <button>Om oss</button>
-    </div>
+    
   `;
 }

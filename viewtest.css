@@ -1,0 +1,43 @@
+#page {
+    background-color: rgb(136, 230, 236);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 12fr 0.5fr;
+    grid-template-areas: 'header header header'
+                        'left meny right'
+                        'left innhold right'
+                        'footer footer footer';
+    font-size: x-large;
+
+}
+
+#header {
+    background-color: rgb(68, 177, 240);
+    grid-area: header;
+    color: white;
+    font-size: 300%;
+    text-size-adjust: 2%;
+    text-align: center;
+}
+
+#meny {
+    background-color: rgb(76, 241, 241);
+    grid-area: meny;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    cursor: pointer;
+}
+
+
+#innhold {
+    background-color: blanchedalmond;
+    grid-area: innhold;
+}
+
+#footer {
+    background-color: rgb(100, 245, 209);
+    grid-area: footer;
+    font-size: 300%;
+    text-align: center;
+}
