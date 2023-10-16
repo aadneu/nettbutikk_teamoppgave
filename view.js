@@ -2,15 +2,11 @@ let app = document.getElementById('app');
 
 viewApp();
 function viewApp() {
-
-  let html
-  if (model.app.currentView == 'mainPage'){
-    html = /*HTML*/`
-    <image src='${model.data.logo}'>
-    <input type='text' placeholder='Søk'>
-    <button>🔍</button>
-   `;
-
+  let html = ``;
+  html += createHeaderHTML();
+  
+  if (model.app.currentView == 'about'){
+    html += aboutView()
   } else if (model.app.currentView == 'side1') {
     html = side1()
   }
@@ -20,9 +16,19 @@ function viewApp() {
  
 }
 
-function side1(){
-    let html = `
-  sadfasdf
-    `;
-    return html;
+
+function createHeaderHTML() {
+  return  /*HTML*/ `
+    <image src='${model.data.logo}'>
+    <input type='text' placeholder='Søk'>
+    <button>🔍</button>
+    <button>*shoppingcart icon*</button>
+    <button>*Registrer icon*</button>
+    <button>*Login Icon*</button> <br>
+    <div>
+      <button>Hjem</button>
+      <button>Produkter</button>
+      <button>Om oss</button>
+    </div>
+  `;
 }

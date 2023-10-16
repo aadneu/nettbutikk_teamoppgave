@@ -2,16 +2,16 @@ const model = {
 
   app: {
     pages: [
-      'mainPage',
-      'profilePage',
-      'shoppingCartPage',
-      'aboutPage',
-      'productListPage',
-      'productDetailedPage',
-      'categoryPage',
-      'loginPage',
+      'main',
+      'profile',
+      'shoppingCart',
+      'about',
+      'productList',
+      'productDetailed',
+      'category',
+      'login',
     ],
-    currentView: "mainPage",
+    currentView: "about",
 
     loggedIn: true,
 
@@ -21,14 +21,14 @@ const model = {
   inputs: {
     search: "",
 
-    productListPage: {
+    productList: {
       sort: {
         field: "price",
         isAscending: true,
       },
     },
 
-    profilePage: {
+    profile: {
       user: {
         name: "Ben Dover",
         email: "getin@getacademy.no",
@@ -38,14 +38,14 @@ const model = {
       },
     },
 
-    shoppingCartPage: {
+    shoppingCart: {
       rabattkode: "",
       items: [
         {productId: 123, count: 1}
       ]
     },
 
-    loginPage: {
+    login: {
         existingUser: true,//if true: username, password -> logged in= true, else users.push({username, password})
         username: '',
         password: '',
@@ -59,19 +59,19 @@ const model = {
 
     categories: [],
 
-    aboutPage: {
+    about: {
         companyDesc: '',
         warning: 'Ferdsel på eget ansvar',
     },
 
-    profilePage: {
+    profile: {
         purchases: [
           `Ekte farse fra Jæren, ordre.nr.: 1969 dato: 2/10/2023`, 
           `Hatt til katt (rosa), ordre.nr.: 420 dato: 24/9/2023`,
         ]
     },
 
-    shoppingCartPage: {
+    shoppingCart: {
       gyldigRabattkode: "Aalto23",
       rabattProsent: 10,
       items: [],
