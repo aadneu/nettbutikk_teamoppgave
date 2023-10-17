@@ -10,13 +10,15 @@ const model = {
 			"category",
 			"login",
 		],
-		currentView: "productList",
+		currentView: "profile",
 
 		loggedIn: true,
 
 		loggedInAs: "T2",
 	},
-
+	salamander: {
+		firfisle:['firfisle'],
+	},
 	inputs: {
 		search: "",
 
