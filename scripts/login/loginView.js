@@ -4,7 +4,7 @@ function loginView() {
     <div>Brukernavn<input type="text"></div>
     <div>Passord<input type="password"></div>
     <div><button>Login</button> </div>
-    <div><button>Registrer ny bruker</button> </div>
+    <div><button onclick='registrerNyBruker()'>Registrer ny bruker</button> </div>
     <div> </div>
     `;
 

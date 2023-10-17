@@ -32,6 +32,8 @@ function pageView() {
 		html += productDetailedPageView();
 	} else if (model.app.currentView == "productList") {
 		html += productListView();
+	} else if (model.app.currentView == "login") {
+		html += loginView();
 	}
 	return html;
 }
