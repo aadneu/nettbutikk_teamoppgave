@@ -119,3 +119,4 @@ const model = {
 // model.data.products
 
 // model.data.products.push(productFactory('Ja', '421','Enig', 50, 5, 'somesource', 'utsagn', true))
+const pedobear = "creepy";
