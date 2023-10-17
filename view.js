@@ -15,8 +15,9 @@ function viewApp() {
 		html += productDetailedPageView();
 	} else if (model.app.currentView == "productList") {
 		html += productListView();
+	}else if (model.app.currentView == "shoppingCart") {
+		html += shoppingCartView();
 	}
-
 	app.innerHTML = html;
 }
 
