@@ -1,14 +1,14 @@
 function mainView() {
 	let html = ``;
 	html = /*HTML*/ `
-	<div style='display: flex'>
+	<div style='display: flex' class='container'>
 	<button>←</button>
 	<image src="${model.data.products[0].image}">
 	<button>→</button>
 	</div>
   <br>
   <div>
-    <div>
+    <div class=''>
       <image src="${model.data.products[0].image}" style="">
       <div>${model.data.products[0].title}</div>
       <div>${model.data.products[0].description}</div>
