@@ -12,7 +12,8 @@ function viewApp() {
     </div></div>
         <div id='left'>LEFT</div>
         <div id='right'>RIGHT</div>
-        <div id='innhold'>${pageView()}</div>
+        <div id='innhold'>${pageView()}
+                  </div>
     </div>
         <div id='footer'>Ferdsel på eget ansvar</div>
     `;
@@ -34,9 +35,15 @@ function pageView() {
 		html += productListView();
 	} else if (model.app.currentView == "login") {
 		html += loginView();
+<<<<<<< Updated upstream
 	} else if (model.app.currentView == "shoppingCart") {
    html += shoppingCartView();
   }
+=======
+	} else if (model.app.currentView == "newuser") {
+		html += newUser();
+	}
+>>>>>>> Stashed changes
 	return html;
 }
 
