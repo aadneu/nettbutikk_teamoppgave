@@ -10,6 +10,7 @@ const model = {
 			"category",
 			"login",
 		],
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
@@ -21,6 +22,15 @@ const model = {
 =======
 		currentView: "login",
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+		currentView: "main",
+=======
+
+		currentView: "about",
+
+>>>>>>> 888d00950e2e8ed114df6daf80e8f5742214fef5
+>>>>>>> 3333182386177fbe49faf7197a638eaad33567de
 
 		loggedIn: true,
 
