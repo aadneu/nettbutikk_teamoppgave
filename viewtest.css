@@ -41,3 +41,11 @@
     font-size: 300%;
     text-align: center;
 }
+
+#logo {
+    cursor:pointer;
+}
+
+button {
+    cursor: pointer;
+}

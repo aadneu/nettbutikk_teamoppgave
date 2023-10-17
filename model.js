@@ -33,7 +33,6 @@ const model = {
 
 		profile: {
 			user: {
-				username: "bennern",
 				name: "Ben Dover",
 				email: "getin@getacademy.no",
 				adress: "Railingstreet 4",
