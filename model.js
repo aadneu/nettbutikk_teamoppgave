@@ -49,10 +49,29 @@ const model = {
 					productId: 123,
 					count: 1,
 					name: "farseKit",
-					price: 100, // Pris i NOK
+					description: "kort beskrivelse",
+					price: 1200, // Pris i NOK
 					image: "https://via.placeholder.com/150",
 				},
-				// Andre produkter i handlekurven
+
+				{
+                   productId: 124,
+				   count: 1,
+				   name: "turKopp",
+				   description: "kort beskrivelse",
+				   price: 1750,
+				   image: "https://via.placeholder.com/150",
+		
+			    },
+
+				{
+					productId: 125,
+					count: 1,
+					name: "kattHatt",
+					description: "kort beskrivelse",
+					price: 300,
+					image: "https://via.placeholder.com/150",
+				}
 			],
 		},
 
