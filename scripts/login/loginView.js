@@ -24,8 +24,6 @@ function newUser(){
     <div> City: <input type="text"></div>
     <div> Phone: <input type="number"></div>
     <div><button>Lag ny bruker</button></div>
-    
- 
     `;
     return html;
 }

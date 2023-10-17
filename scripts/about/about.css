@@ -1,67 +1,78 @@
-.boxes{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+body {
+    overflow: hidden;
 }
 
-.overskrift{
+.boxes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxes2{
+ display: flex;
+ justify-content: center;
+}
+
+.overskrift {
     font-size: xx-large;
     font-weight: 900;
     color: black;
     border: 2px solid black;
-    width: 150px;
+    width: 50vw;
+    width: 140px;
+    text-align: center;
     margin: 5px;
     padding: 0px;
     height: 40px;
     
 }
 
-.box1{
+.box1 {
     border: 2px solid black;
-    width: 290px;
-    height: 40px;
+    width: 50vw;
+    height: 50px;
     position: absolute;
     top: 1px;
-}
-.box2{
-    border: 2px solid black;
-    width: 290px;
-    height: 100px;
-    top: 37px;
-    left: -0.7%;
-    position: absolute;
-}
-.box3{
-    border: 2px solid black;
-    width: 290px;
-    height: 40px;
-    top: 113.5px;
-    left: -0.9%;
-    position: absolute;
-}
-
-.box5{
-    border: 2px solid black;
-    width: 290px;
-    height: 100px;
-    top: 192px;
-    left: -0.8%;
-    position: absolute;
-}
-.box6{
-    border: 2px solid black;
-    width: 290px;
-    height: 80px;
-    top: 300px;
-    left: -0.8%;
-    position: absolute;
     
 }
-.box7{
-    border: 5px solid black;
-    width: 300px;
-    height: 394px;
-    top: 585px;
+
+.box2 {
+    border: 2px solid black;
+    width: 50vw;
+    height: 120px;
+    top: 49px;
     position: absolute;
 }
 
+.box3 {
+    border: 2px solid black;
+    width: 50vw;
+    height: 50px;
+    top: 217px;
+    position: absolute;
+}
+
+.box4 {
+    border: 2px solid black;
+    width: 50vw;
+    height: 120px;
+    top: 265px;
+    position: absolute;
+}
+
+.box5 {
+    border: 2px solid black;
+    width: 50vw;
+    height: 80px;
+    top: 389px;
+    position: absolute;
+
+}
+
+.box7 {
+    border: 3px solid black;
+    width: 51vw;
+    height: 476px;
+    top: 500px;
+    position: absolute;
+}

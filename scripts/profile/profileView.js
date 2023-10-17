@@ -1,15 +1,14 @@
 function profileView() {
 	let html = /*html*/ `
     <div>Min side overskrift</div>
-    <div>
-        Du er innlogget som: ${model.inputs.profile.user.username}, 
-        email: ${model.inputs.profile.user.email}
-        kunde.nr   
-    </div>
-    <div><button>Endre profil</button></div>
+    <div>Du er innlogget som: ${model.inputs.profile.user.name} </div>
+    <div>email: ${model.inputs.profile.user.email} </div>
+        
+   
     <div>en loop med userinfo?</div>
-    <div>Ordrehistorikk</div>
-    <div>liste med ordrer${listOrders()}</div>
+    <div><button>Endre profil</button></div>
+    <div>Ordrehistorikk:</div>
+    <div>${listOrders()}</div>
     `;
 
 	return html;
@@ -17,8 +16,8 @@ function profileView() {
 
 function listOrders() {
 	let orderList = "";
-	for (let i; i < model.data.profile.purchases.length; i++) {
-		orderList += `${model.data.profile.purchases.length[i]}`;
+	for (let i = 0; i < model.data.profile.purchases.length; i++) {
+		orderList += `<li>${model.data.profile.purchases[i]}</li>`;
 	}
 	return orderList;
 }
