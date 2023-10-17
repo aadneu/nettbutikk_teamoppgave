@@ -10,7 +10,9 @@ const model = {
 			"category",
 			"login",
 		],
-		currentView: "profile",
+
+		currentView: "about",
+
 
 		loggedIn: true,
 
