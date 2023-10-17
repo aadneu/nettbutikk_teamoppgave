@@ -48,7 +48,7 @@ const model = {
 				{
 					productId: 123,
 					count: 1,
-					name: "Farse",
+					name: "farseKit",
 					price: 100, // Pris i NOK
 					image: "https://via.placeholder.com/150",
 				},
