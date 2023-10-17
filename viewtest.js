@@ -35,15 +35,12 @@ function pageView() {
 		html += productListView();
 	} else if (model.app.currentView == "login") {
 		html += loginView();
-<<<<<<< Updated upstream
-	} else if (model.app.currentView == "shoppingCart") {
+  } else if (model.app.currentView == "shoppingCart") {
    html += shoppingCartView();
-  }
-=======
-	} else if (model.app.currentView == "newuser") {
+  } else if (model.app.currentView == "newuser") {
 		html += newUser();
 	}
->>>>>>> Stashed changes
+
 	return html;
 }
 
