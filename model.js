@@ -9,10 +9,10 @@ const model = {
 			"productDetailed",
 			"category",
 			"login",
+			"newuser",
 		],
 
-		currentView: "about",
-
+		currentView: "main",
 
 		loggedIn: true,
 

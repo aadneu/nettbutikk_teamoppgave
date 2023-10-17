@@ -12,7 +12,8 @@ function viewApp() {
     </div></div>
         <div id='left'>LEFT</div>
         <div id='right'>RIGHT</div>
-        <div id='innhold'>${pageView()}</div>
+        <div id='innhold'>${pageView()}
+                  </div>
     </div>
         <div id='footer'>Ferdsel på eget ansvar</div>
     `;
@@ -34,9 +35,12 @@ function pageView() {
 		html += productListView();
 	} else if (model.app.currentView == "login") {
 		html += loginView();
-	} else if (model.app.currentView == "shoppingCart") {
+  } else if (model.app.currentView == "shoppingCart") {
    html += shoppingCartView();
-  }
+  } else if (model.app.currentView == "newuser") {
+		html += newUser();
+	}
+
 	return html;
 }
 
