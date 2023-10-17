@@ -8,7 +8,7 @@ function loginView() {
         
 
         <div><button>Login</button> </div>
-        <div><button>Registrer ny bruker</button> </div>
+        <div><button onclick='changeView("newuser")'>Registrer ny bruker</button> </div>
     </div>
     `;
 
@@ -32,3 +32,5 @@ function newUser(){
     `;
     return html;
 }
+
+
