@@ -12,20 +12,24 @@ let html = /*HTML*/ `
 
 `;
 
-// Ignorer alt rotet hvis dere ser dette, jeg har en plan   :DDDD
+for (let i = 0; i < model.shoppingcart.items.lenght; i++) {
+    
 html += /*HTML*/ `  
-
 <tr>
 <div class="cart-item">
-<td><img src= "${model.shoppingcart.items[i].image}"></td>
+<td><img src= "${model.shoppingCart.length[i].image}"></td>
 <td>${model.shoppingcart.items[i].name}</td>
-<p>${model.shoppingcart.items[i].description}</p>
-<div> Antall: ${model.shoppingcart.items.count} </div> 
-<div>${model.shoppingcart.items[i].count}</div>          
-<div> Pris: </div> 
+<td>${model.shoppingcart.items[i].description}</td>
+<td> Antall: ${model.shoppingcart.items.count} </td> 
+<td>${model.shoppingcart.items[i].count}</td>          
+<td> Pris: ${model.shoppingcart.items[i].price} </td> 
 </div>
 <tr>
 `;
+}
 
+html += /*HTML*/ `
+</table>
+`;
 return html;
 }
