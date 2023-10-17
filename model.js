@@ -10,7 +10,13 @@ const model = {
 			"category",
 			"login",
 		],
+<<<<<<< HEAD
 		currentView: "main",
+=======
+
+		currentView: "about",
+
+>>>>>>> 888d00950e2e8ed114df6daf80e8f5742214fef5
 
 		loggedIn: true,
 
