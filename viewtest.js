@@ -6,9 +6,9 @@ function viewApp() {
     <div id='page'>
         <div id='header'>HEADER${createHeaderHTML()}</div>
         <div id='meny'><div>
-      <button>Hjem</button>
-      <button>Produkter</button>
-      <button>Om oss</button>
+      <button onclick="changeView('main')">Hjem</button>
+      <button onclick="changeView('productList')">Produkter</button>
+      <button onclick="changeView('about')">Om oss</button>
     </div></div>
         <div id='left'>LEFT</div>
         <div id='right'>RIGHT</div>
@@ -35,9 +35,9 @@ function pageView() {
 		html += productListView();
 	} else if (model.app.currentView == "login") {
 		html += loginView();
-  } else if (model.app.currentView == "shoppingCart") {
-   html += shoppingCartView();
-  } else if (model.app.currentView == "newuser") {
+	} else if (model.app.currentView == "shoppingCart") {
+		html += shoppingCartView();
+	} else if (model.app.currentView == "newuser") {
 		html += newUser();
 	}
 
@@ -46,12 +46,12 @@ function pageView() {
 
 function createHeaderHTML() {
 	return /*HTML*/ `
-    <image src='${model.data.logo}'>
+    <image id='logo' src='${model.data.logo}' onclick="changeView('main')">
     <input id='search' type='text' placeholder='Søk'>
-    <button>🔍</button>
-    <button>*shoppingcart icon*</button>
-    <button>*Registrer icon*</button>
-    <button>*Login Icon*</button> <br>
+    <button onclick="">🔍</button>
+    <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
+    <button onclick="changeView('newuser')">*Registrer icon*</button>
+    <button onclick="changeView('login')">*Login Icon*</button> <br>
     
   `;
 }
