@@ -10,16 +10,20 @@ const model = {
 			"category",
 			"login",
 		],
+<<<<<<< Updated upstream
 
 		currentView: "about",
 
+=======
+		currentView: "main",
+>>>>>>> Stashed changes
 
 		loggedIn: true,
 
 		loggedInAs: "T2",
 	},
 	salamander: {
-		firfisle:['firfisle'],
+		firfisle: ["firfisle"],
 	},
 	inputs: {
 		search: "",
