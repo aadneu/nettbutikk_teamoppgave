@@ -10,6 +10,7 @@ const model = {
 			"category",
 			"login",
 			"newuser",
+			
 		],
 
 		currentView: "shoppingCart",
