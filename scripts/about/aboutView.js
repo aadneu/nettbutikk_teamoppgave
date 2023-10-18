@@ -18,4 +18,4 @@ function aboutView() {
 }
 // $(window).on('load resize', function(){
 //   $('#div').width($(this).width());
-// });
+//  });

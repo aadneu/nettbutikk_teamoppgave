@@ -104,7 +104,9 @@ const model = {
 			}
 		],
 
-		categories: [],
+		categories: [
+			'Mat', 'Hatter til katter', 'Terje merch'
+		],
 
 		about: {
 			companyDesc: "",
