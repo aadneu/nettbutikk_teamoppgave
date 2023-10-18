@@ -10,10 +10,10 @@ const model = {
 			"category",
 			"login",
 			"newuser",
+			
 		],
 
-		currentView: "main",
-
+		currentView: "shoppingCart",
 
 		loggedIn: true,
 
@@ -55,14 +55,13 @@ const model = {
 				},
 
 				{
-                   productId: 124,
-				   count: 1,
-				   name: "turKopp",
-				   description: "kort beskrivelse",
-				   price: 1750,
-				   image: "https://via.placeholder.com/150",
-		
-			    },
+					productId: 124,
+					count: 1,
+					name: "turKopp",
+					description: "kort beskrivelse",
+					price: 1750,
+					image: "https://via.placeholder.com/150",
+				},
 
 				{
 					productId: 125,
@@ -71,7 +70,7 @@ const model = {
 					description: "kort beskrivelse",
 					price: 300,
 					image: "https://via.placeholder.com/150",
-				}
+				},
 			],
 		},
 

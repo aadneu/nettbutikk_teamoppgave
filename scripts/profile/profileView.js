@@ -9,17 +9,9 @@ function profileView() {
     <div><button>Endre profil</button></div>
     <div>Ordrehistorikk:</div>
     <div>${listOrders()}</div>
-    <div>${viewList()}</div>
+    <div></div>
     `;
 
 	return html;
 }
 
-function viewList(){
-    let viewlist = '';
-    for(let i = 0; i < model.app.pages.length; i++){
-        viewlist += `<div><button onclick='changeView("${model.app.pages[i]}")'>${model.app.pages[i]}</button></div>`
-
-    }
-    return viewlist
-}
