@@ -5,7 +5,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 img {
-width: 80px;
+width: 85px;
 height: 75px;
 image-rendering: -webkit-optimize-contrast;
 }
@@ -22,13 +22,19 @@ height: 30px;
 border: 1px solid black;
 text-align: center;
 border-radius: 5px;
+font-weight: bold;
 }
 
+table button.minus,
 table button.plus{
-background-color: white;
+background-color: blanchedalmond;
+width: 30px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+margin: 0;
+border: none;
 }
 
-table button.minus{
-    
-background-color: white;
-}
+
+

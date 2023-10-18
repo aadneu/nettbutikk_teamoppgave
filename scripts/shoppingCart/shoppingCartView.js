@@ -3,9 +3,9 @@ function shoppingCartView() {
 
 <table>
 <tr>
-<th>Bilde</th>
-<th>Navn</th>
-<th>Beskrivelse</th>
+<th></th>
+<th></th>
+<th></th>
 <th>Antall</th>
 <th>Pris</th>
 </tr>
