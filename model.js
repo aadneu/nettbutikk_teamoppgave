@@ -34,14 +34,14 @@ const model = {
 
 		profile: {
 			newuser: {
-				name: "Ben Dover",
+				name: "",
 				password: '',
 				repeatpassword: '',
-				 email: "getin@getacademy.no",
-				adress: "Railingstreet4",
-				zipcode: "6969",
-				city: 'Larvik',
-				phone: "42069420",
+				email: "",
+				adress: "",
+				zipcode: "",
+				city: '',
+				phone: "",
 			},
 		},
 
@@ -54,7 +54,7 @@ const model = {
 					name: "Ekte farse fra Jæren",
 					description: "kort beskrivelse",
 					price: 1200, // Pris i NOK
-					image: "https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
+					image: "https://via.placeholder.com/150",
 				},
 
 				{
@@ -72,7 +72,7 @@ const model = {
 					name: "Hatt til katt",
 					description: "kort beskrivelse",
 					price: 300,
-					image: "https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
+					image: "https://via.placeholder.com/150",
 				},
 			],
 		},

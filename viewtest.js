@@ -39,7 +39,7 @@ function pageView() {
 	} else if (model.app.currentView == "shoppingCart") {
 		html += shoppingCartView();
 	} else if (model.app.currentView == "newuser") {
-		html += newUser();
+		html += newUserView();
 	}
 
 	return html;
