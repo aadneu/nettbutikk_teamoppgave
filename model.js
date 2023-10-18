@@ -10,7 +10,6 @@ const model = {
 			"category",
 			"login",
 			"newuser",
-			
 		],
 
 		currentView: "main",
@@ -35,12 +34,12 @@ const model = {
 		profile: {
 			newuser: {
 				name: "",
-				password: '',
-				repeatpassword: '',
+				password: "",
+				repeatpassword: "",
 				email: "",
 				adress: "",
 				zipcode: "",
-				city: '',
+				city: "",
 				phone: "",
 			},
 		},
@@ -63,7 +62,8 @@ const model = {
 					name: "Topptur™ turtopp",
 					description: "kort beskrivelse",
 					price: 1750,
-					image: "https://productimages.biltema.com/v1/Image/product/xlarge/2000038155/2",
+					image:
+						"https://productimages.biltema.com/v1/Image/product/xlarge/2000038155/2",
 				},
 
 				{
@@ -86,27 +86,25 @@ const model = {
 
 	data: {
 		users: [
-			{ 
-				username: "T2", 
-				password: "", 
-				customerId: "", 
-				admin: true 
+			{
+				username: "T2",
+				password: "",
+				customerId: "",
+				admin: true,
 			},
 			{
 				name: "Ben Dover",
-				password: '',
+				password: "",
 				email: "getin@getacademy.no",
 				adress: "Railingstreet 4",
 				zipcode: "6969",
-				city: 'Larvik',
+				city: "Larvik",
 				phone: "42069420",
-				customerid: '',
-			}
+				customerid: "",
+			},
 		],
 
-		categories: [
-			'Mat', 'Hatter til katter', 'Terje merch'
-		],
+		categories: ["Mat", "Hatter til katter", "Terje merch"],
 
 		about: {
 			companyDesc: "",
