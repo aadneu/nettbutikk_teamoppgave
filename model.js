@@ -48,7 +48,7 @@ const model = {
 				{
 					productId: 123,
 					count: 1,
-					name: "farseKit",
+					name: "Ekte farse fra Jæren",
 					description: "kort beskrivelse",
 					price: 1200, // Pris i NOK
 					image: "https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
@@ -57,16 +57,16 @@ const model = {
 				{
 					productId: 124,
 					count: 1,
-					name: "turKopp",
+					name: "Topptur™ turtopp",
 					description: "kort beskrivelse",
 					price: 1750,
-					image: "https://via.placeholder.com/150",
+					image: "https://productimages.biltema.com/v1/Image/product/xlarge/2000038155/2",
 				},
 
 				{
 					productId: 125,
 					count: 1,
-					name: "kattHatt",
+					name: "Hatt til katt",
 					description: "kort beskrivelse",
 					price: 300,
 					image: "https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
