@@ -19,7 +19,6 @@ function shoppingCartView() {
 <td><image src= "${items[i].image}"></td>
 <td>${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
-
 <td><button class="minus" onclick="removeItems()">➖</button> 
 <span><input type="text" value="${items[i].count}" readOnly></span>
 <button class ="plus" onclick="addItems()">➕</button>
