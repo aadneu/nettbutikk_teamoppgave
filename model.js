@@ -10,7 +10,6 @@ const model = {
 			"category",
 			"login",
 			"newuser",
-			
 		],
 
 		currentView: "main",
@@ -34,14 +33,14 @@ const model = {
 
 		profile: {
 			newuser: {
-				name: "Ben Dover",
-				password: '',
-				repeatpassword: '',
-				 email: "getin@getacademy.no",
-				adress: "Railingstreet4",
-				zipcode: "6969",
-				city: 'Larvik',
-				phone: "42069420",
+				name: "",
+				password: "",
+				repeatpassword: "",
+				email: "",
+				adress: "",
+				zipcode: "",
+				city: "",
+				phone: "",
 			},
 		},
 
@@ -54,7 +53,7 @@ const model = {
 					name: "Ekte farse fra Jæren",
 					description: "kort beskrivelse",
 					price: 1200, // Pris i NOK
-					image: "https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
+					image: "https://via.placeholder.com/150",
 				},
 
 				{
@@ -63,7 +62,8 @@ const model = {
 					name: "Topptur™ turtopp",
 					description: "kort beskrivelse",
 					price: 1750,
-					image: "https://productimages.biltema.com/v1/Image/product/xlarge/2000038155/2",
+					image:
+						"https://productimages.biltema.com/v1/Image/product/xlarge/2000038155/2",
 				},
 
 				{
@@ -72,7 +72,7 @@ const model = {
 					name: "Hatt til katt",
 					description: "kort beskrivelse",
 					price: 300,
-					image: "https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
+					image: "https://via.placeholder.com/150",
 				},
 			],
 		},
@@ -86,25 +86,25 @@ const model = {
 
 	data: {
 		users: [
-			{ 
-				username: "T2", 
-				password: "", 
-				customerId: "", 
-				admin: true 
+			{
+				username: "T2",
+				password: "",
+				customerId: "",
+				admin: true,
 			},
 			{
 				name: "Ben Dover",
-				password: '',
+				password: "",
 				email: "getin@getacademy.no",
 				adress: "Railingstreet 4",
 				zipcode: "6969",
-				city: 'Larvik',
+				city: "Larvik",
 				phone: "42069420",
-				customerid: '',
-			}
+				customerid: "",
+			},
 		],
 
-		categories: [],
+		categories: ["Mat", "Hatter til katter", "Terje merch"],
 
 		about: {
 			companyDesc: "",

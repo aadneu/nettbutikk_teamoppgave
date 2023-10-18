@@ -7,12 +7,11 @@
     justify-content: center;
     text-align: center;
 }
+.boxes2 {
+    display: flex;
+    justify-content: center;
 
-.boxes2{
- display: flex;
- justify-content: center;
 }
-
 .overskrift {
     font-size: xx-large;
     font-weight: 900;
@@ -24,18 +23,16 @@
     margin: 5px;
     padding: 0px;
     height: 40px;
-    
-}
 
+}
 .box1 {
     border: 2px solid black;
     width: 50vw;
     height: 50px;
     position: absolute;
     top: 1px;
-    
-}
 
+}
 .box2 {
     border: 2px solid black;
     width: 50vw;
@@ -43,7 +40,6 @@
     top: 49px;
     position: absolute;
 }
-
 .box3 {
     border: 2px solid black;
     width: 50vw;
@@ -51,7 +47,6 @@
     top: 217px;
     position: absolute;
 }
-
 .box4 {
     border: 2px solid black;
     width: 50vw;
@@ -59,7 +54,6 @@
     top: 265px;
     position: absolute;
 }
-
 .box5 {
     border: 2px solid black;
     width: 50vw;
@@ -68,7 +62,6 @@
     position: absolute;
 
 }
-
 .box7 {
     border: 3px solid black;
     width: 51vw;
