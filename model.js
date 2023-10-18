@@ -51,7 +51,7 @@ const model = {
 					name: "farseKit",
 					description: "kort beskrivelse",
 					price: 1200, // Pris i NOK
-					image: "https://via.placeholder.com/150",
+					image: "https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
 				},
 
 				{
@@ -69,7 +69,7 @@ const model = {
 					name: "kattHatt",
 					description: "kort beskrivelse",
 					price: 300,
-					image: "https://via.placeholder.com/150",
+					image: "https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
 				},
 			],
 		},

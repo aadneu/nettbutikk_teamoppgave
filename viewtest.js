@@ -15,10 +15,11 @@ function viewApp() {
         <div id='innhold'>${pageView()}
                   </div>
     </div>
-        <div id='footer'>Ferdsel på eget ansvar</div>
+
+    <div id='footer'>Ferdsel på eget ansvar</div>
     `;
 
-	app.innerHTML = html;
+	app.innerHTML = html;     
 }
 
 function pageView() {
