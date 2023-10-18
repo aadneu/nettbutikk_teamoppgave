@@ -9,15 +9,17 @@ function profileView() {
     <div><button>Endre profil</button></div>
     <div>Ordrehistorikk:</div>
     <div>${listOrders()}</div>
+    <div>${viewList()}</div>
     `;
 
 	return html;
 }
 
-function listOrders() {
-	let orderList = "";
-	for (let i = 0; i < model.data.profile.purchases.length; i++) {
-		orderList += `<li>${model.data.profile.purchases[i]}</li>`;
-	}
-	return orderList;
+function viewList(){
+    let viewlist = '';
+    for(let i = 0; i < model.app.pages.length; i++){
+        viewlist += `<div><button onclick='changeView("${model.app.pages[i]}")'>${model.app.pages[i]}</button></div>`
+
+    }
+    return viewlist
 }
