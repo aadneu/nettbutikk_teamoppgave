@@ -10,7 +10,7 @@ function viewApp() {
       <button onclick="changeView('productList')">Produkter</button>
       <button onclick="changeView('about')">Om oss</button>
     </div></div>
-        <div id='left'>LEFT</div>
+        <div id='left'>LEFT ${viewList()}</div>
         <div id='right'>RIGHT</div>
         <div id='innhold'>${pageView()}
                   </div>
