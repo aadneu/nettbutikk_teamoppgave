@@ -12,11 +12,11 @@ let html = /*HTML*/ `
 
 `;
 
-for (let i = 0; i < model.shoppingcart.items.length; i++) {
+for (let i = 0; i < model.inputs.shoppingcart.items.length; i++) {
     
 html += /*HTML*/ `  
 <tr>
-<td><img src= "${model.shoppingCart.items.length[i].image}"></td>
+<td><img src= "${model.inputs.shoppingCart.items.length[i].image}"></td>
 <td>${model.shoppingcart.items[i].name}</td>
 <td>${model.shoppingcart.items[i].description}</td>
 <td> Antall: ${model.shoppingcart.items.count} </td> 
