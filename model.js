@@ -13,7 +13,7 @@ const model = {
 			
 		],
 
-		currentView: "shoppingCart",
+		currentView: "main",
 
 		loggedIn: true,
 
@@ -33,11 +33,14 @@ const model = {
 		},
 
 		profile: {
-			user: {
+			newuser: {
 				name: "Ben Dover",
-				email: "getin@getacademy.no",
-				adress: "Railingstreet 4",
+				password: '',
+				repeatpassword: '',
+				 email: "getin@getacademy.no",
+				adress: "Railingstreet4",
 				zipcode: "6969",
+				city: 'Larvik',
 				phone: "42069420",
 			},
 		},
@@ -82,7 +85,24 @@ const model = {
 	},
 
 	data: {
-		users: [{ username: "T2", password: "", customerId: "", admin: true }],
+		users: [
+			{ 
+				username: "T2", 
+				password: "", 
+				customerId: "", 
+				admin: true 
+			},
+			{
+				name: "Ben Dover",
+				password: '',
+				email: "getin@getacademy.no",
+				adress: "Railingstreet 4",
+				zipcode: "6969",
+				city: 'Larvik',
+				phone: "42069420",
+				customerid: '',
+			}
+		],
 
 		categories: [],
 
