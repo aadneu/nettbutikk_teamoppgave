@@ -26,7 +26,26 @@ function shoppingCartView() {
 <td> Pris: ${items[i].price} </td> 
 <tr>
 `;
-	}
+}
+
+html += /*HTML*/ `
+<tr>
+	<td colspan="3"></td>
+	<td>Totalt:</td>
+	<td id="total-sum"></td>
+	<tr>
+
+    <td colspan="3"></td>
+    <td>Rabattkode:</td>
+    <td><input class="rabatt" type="text" id="rabattkode"></td>
+	<tr>
+
+	<td colspan="4"></td>
+	<td colspan="2"><button class="kasseKlikk" onclick="goToCashier()">Til kassen</button></td>
+</tr>
+</tr>
+</tr>
+`;
 
 	html += /*HTML*/ `
 </table>
