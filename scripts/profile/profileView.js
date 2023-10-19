@@ -1,14 +1,14 @@
 function profileView() {
 	let html = /*html*/ `
-    <div>Min side overskrift</div>
-    <div>Du er innlogget som: ${model.data.users[1].name} </div>
-    <div>email: ${model.data.users[1].email} </div>
+    <div class='profilecenter'>Min side overskrift</div>
+    <div class='profilecenter'>Du er innlogget som: ${model.data.users[1].name}, ${model.data.users[1].email}</div>
+    <div></div>
         
    
-    <div>brukerinfomasjon</div>
-    <div><button>Endre profil</button></div>
-    <div>Ordrehistorikk:</div>
-    <div>${listOrders()}</div>
+    <div class='profilecenter'>brukerinfomasjon</div>
+    <div class='profilecenter'><button>Endre profil</button></div>
+    <div class='profilecenter'>Ordrehistorikk:</div>
+    <div >${listOrders()}</div>
     <div></div>
     `;
 
