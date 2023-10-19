@@ -16,7 +16,7 @@ function shoppingCartView() {
 	for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
-<td><image src= "${items[i].image}"></td>
+<td><image class="cartImage" src= "${items[i].image}"></td>
 <td>${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
 <td><button class="minus" onclick="removeItems()">➖</button> 
