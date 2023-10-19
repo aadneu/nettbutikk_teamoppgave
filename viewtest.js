@@ -40,7 +40,6 @@ function pageView() {
 		html += shoppingCartView();
 	} else if (model.app.currentView == "newuser") {
 		html += newUserView();
-		html += newUser();
 	} else if (model.app.currentView == "category") {
 		html += categoryView();
 	}
