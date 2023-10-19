@@ -1,4 +1,4 @@
-table {
+.shoppingTable {
 width: 100%;
 height: 300px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,20 +10,21 @@ height: 75px;
 image-rendering: -webkit-optimize-contrast;
 }
 
-th,td {
+.shoppingTable th,
+.shoppingTable td {
 border: 1px solid black;
 padding: 8px;
 text-align: left;
 }
 
-/* input[type="text"] {    må ordnes på
+input.customInput {    
 width: 30px;
 height: 30px;
 border: 1px solid black;
 text-align: center;
 border-radius: 5px;
 font-weight: bold;
-} */
+} 
 
 table button.minus,
 table button.plus{

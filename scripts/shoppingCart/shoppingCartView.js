@@ -1,7 +1,7 @@
 function shoppingCartView() {
 	let html = /*HTML*/ `
 
-<table>
+<table class="shoppingTable">
 <tr>
 <th></th>
 <th></th>
@@ -20,7 +20,7 @@ function shoppingCartView() {
 <td>${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
 <td><button class="minus" onclick="removeItems()">➖</button> 
-<span><input type="text" value="${items[i].count}" readOnly></span>
+<span><input type="text" class="customInput" value="${items[i].count}" readOnly></span>
 <button class ="plus" onclick="addItems()">➕</button>
 </td>
 <td> Pris: ${items[i].price} </td> 
