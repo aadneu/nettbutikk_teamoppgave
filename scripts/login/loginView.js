@@ -12,20 +12,5 @@ function loginView() {
 	return html;
 }
 
-function newUser(){
-    let html = /*html*/ `
-    <div>Fyll ut:</div>
-    <div>Username: <input type="text"></div>
-    <div>Name: <input type="text"></div>
-
-    <div>Email: <input type="text"></div>
-    <div>Adress: <input type="text"></div>
-    <div>Zipcode: <input type="text"></div>
-    <div> City: <input type="text"></div>
-    <div> Phone: <input type="number"></div>
-    <div><button>Lag ny bruker</button></div>
-    `;
-    return html;
-}
 
 

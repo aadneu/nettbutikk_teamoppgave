@@ -16,6 +16,6 @@ function aboutView() {
   `;
 	return html;
 }
-$(window).on('load resize', function(){
-  $('#div').width($(this).width());
-});
+// $(window).on('load resize', function(){
+//   $('#div').width($(this).width());
+//  });

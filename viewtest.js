@@ -15,10 +15,11 @@ function viewApp() {
         <div id='innhold'>${pageView()}
                   </div>
     </div>
-        <div id='footer'>Ferdsel på eget ansvar</div>
+
+    <div id='footer'>Ferdsel på eget ansvar</div>
     `;
 
-	app.innerHTML = html;
+	app.innerHTML = html;     
 }
 
 function pageView() {
@@ -38,9 +39,11 @@ function pageView() {
 	} else if (model.app.currentView == "shoppingCart") {
 		html += shoppingCartView();
 	} else if (model.app.currentView == "newuser") {
+		html += newUserView();
 		html += newUser();
+	} else if (model.app.currentView == "category") {
+		html += categoryView();
 	}
-
 	return html;
 }
 

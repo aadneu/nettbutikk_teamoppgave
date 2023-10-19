@@ -1,33 +1,35 @@
 function shoppingCartView() {
-let html = /*HTML*/ `
+	let html = /*HTML*/ `
 
-<table>
+<table class="shoppingTable">
 <tr>
-<th>Bilde</th>
-<th>Navn</th>
-<th>Beskrivelse</th>
+<th></th>
+<th></th>
+<th></th>
 <th>Antall</th>
 <th>Pris</th>
 </tr>
 
 `;
+	let items = model.inputs.shoppingCart.items;
 
-for (let i = 0; i < model.shoppingcart.items.length; i++) {
-    
-html += /*HTML*/ `  
+	for (let i = 0; i < items.length; i++) {
+		html += /*HTML*/ `  
 <tr>
-<td><img src= "${model.shoppingCart.items.length[i].image}"></td>
-<td>${model.shoppingcart.items[i].name}</td>
-<td>${model.shoppingcart.items[i].description}</td>
-<td> Antall: ${model.shoppingcart.items.count} </td> 
-<td>${model.shoppingcart.items[i].count}</td>          
-<td> Pris: ${model.shoppingcart.items[i].price} </td> 
+<td><image class="cartImage" src= "${items[i].image}"></td>
+<td>${items[i].name}</td>
+<td class="description-cell">${items[i].description}</td>
+<td><button class="minus" onclick="removeItems()">➖</button> 
+<span><input type="text" class="customInput" value="${items[i].count}" readOnly></span>
+<button class ="plus" onclick="addItems()">➕</button>
+</td>
+<td> Pris: ${items[i].price} </td> 
 <tr>
 `;
-}
+	}
 
-html += /*HTML*/ `
+	html += /*HTML*/ `
 </table>
 `;
-return html;
+	return html;
 }
