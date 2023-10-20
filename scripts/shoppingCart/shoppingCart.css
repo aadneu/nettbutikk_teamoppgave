@@ -3,17 +3,19 @@ width: 100%;
 height: 300px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 margin-bottom: 50px;
+border-collapse: collapse;
 } 
 
 .cartImage {
-width: 85px;
+width: 90px;
 height: 75px;
 image-rendering: -webkit-optimize-contrast;
 }
 
 .shoppingTable th,
 .shoppingTable td {
-border: 1px solid black;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
 padding: 8px;
 text-align: left;
 }
@@ -55,3 +57,19 @@ width: 100px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: bold;
 }
+
+
+
+.shoppingTable th {
+    border: none; /* Fjerner grensene for kolonnenavnene */
+  }
+  
+  .shoppingTable .description-cell {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .shoppingTable .quantity-column, .shoppingTable .price-column {
+    width: 80px; /* Justerer bredden for antall- og pris-kolonnene */
+    text-align: center;
+  }
