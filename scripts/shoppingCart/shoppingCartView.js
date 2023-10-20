@@ -37,7 +37,7 @@ html += /*HTML*/ `
 <tr class="testings">
     <td colspan="3"></td>
     <td>Rabattkode:</td>
-    <td><input class="rabatt" type="text" id="rabattkode"></td>
+    <td><input class="rabatt" type="text" id="rabattkode" placeholder="Aalto23"></td>
 </tr>
 <tr class="testings">
     <td colspan="4"></td>
