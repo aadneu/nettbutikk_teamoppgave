@@ -20,8 +20,8 @@ function shoppingCartView() {
 <td>${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
 <td><button class="minus" onclick="removeItems()">➖</button> 
-<span><input type="text" class="customInput" value="${items[i].count}" readOnly></span>
-<button class ="plus" onclick="addItems()">➕</button>
+<span><input type="text" class="customInput" id="count-${i}" value="${items[i].count}" readOnly></span>
+<button class ="plus" onclick="addItems(${i})">➕</button>
 </td>
 <td> Pris: ${items[i].price} </td> 
 <tr>
