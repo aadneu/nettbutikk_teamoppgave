@@ -5,3 +5,8 @@ function listOrders() {
 	}
 	return orderList;
 }
+
+function showUserInfo(){
+	const userEntries = Object.entries(model.data.users[1])
+	return userEntries
+}

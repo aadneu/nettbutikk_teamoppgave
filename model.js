@@ -100,7 +100,7 @@ const model = {
 				zipcode: "6969",
 				city: "Larvik",
 				phone: "42069420",
-				customerid: "",
+				customerid: "1",
 			},
 		],
 
