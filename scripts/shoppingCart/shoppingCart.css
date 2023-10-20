@@ -70,6 +70,11 @@ font-weight: bold;
   }
   
   .shoppingTable .quantity-column, .shoppingTable .price-column {
-    width: 80px; /* Justerer bredden for antall- og pris-kolonnene */
+    width: 80px; 
     text-align: center;
+  }
+
+  .testings td {
+    border: none;
+    border-right: none;
   }
