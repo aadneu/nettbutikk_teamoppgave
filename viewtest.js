@@ -7,7 +7,7 @@ function viewApp() {
         <div id='header'>HEADER${createHeaderHTML()}</div>
         <div id='meny'><div>
       <button onclick="changeView('main')">Hjem</button>
-      <button onclick="changeView('productList')">Produkter</button>
+      <button onclick="changeView('category')">Produkter</button>
       <button onclick="changeView('about')">Om oss</button>
     </div></div>
         <div id='left'>LEFT ${viewList()}</div>

@@ -3,7 +3,8 @@ function productListView(category) {
 
 	for (let i = 0; i < model.data.products.length; i++) {
 		if (
-			model.data.products[i].category.toLowerCase() == category.toLowerCase()
+			model.data.products[i].category.toLowerCase() ==
+			model.app.currentCategory.toLowerCase()
 		) {
 			html += /*html*/ `
       <div style="display:flex; justify-content:center; align-items: center ">
