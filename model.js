@@ -16,7 +16,7 @@ const model = {
 
 		currentView: "main",
 
-		loggedIn: true,
+		loggedIn: false,
 
 		loggedInAs: "T2",
 	},
@@ -83,7 +83,7 @@ const model = {
 
 		login: {
 			existingUser: true, //if true: username, password -> logged in= true, else users.push({username, password})
-			username: "",
+			email: "",
 			password: "",
 		},
 	},
@@ -91,9 +91,9 @@ const model = {
 	data: {
 		users: [
 			{
-				username: "T2",
-				password: "",
-				customerId: "",
+				email: "t2",
+				password: "t2",
+				customerId: "0",
 				admin: true,
 			},
 			{

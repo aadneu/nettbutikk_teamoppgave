@@ -50,6 +50,7 @@ function createHeaderHTML() {
     <button onclick="">🔍</button>
     <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
     <button onclick="changeView('newuser')">*Registrer icon*</button>
-    <button onclick="changeView('login')">*Login Icon*</button> <br>
+    ${isLoggedInButton()}
+     <br>
   `;
 }
