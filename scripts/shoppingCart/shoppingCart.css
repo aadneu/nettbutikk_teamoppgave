@@ -58,25 +58,28 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: bold;
 }
 
-
-
 .shoppingTable th {
     border: none; /* Fjerner grensene for kolonnenavnene */
-  }
+}
   
-  .shoppingTable .description-cell {
+.shoppingTable .description-cell {
     font-size: 14px;
     font-weight: bold;
-  }
+}
   
-  .shoppingTable .quantity-column, .shoppingTable .price-column {
-    width: 80px; 
-    text-align: center;
-  }
+.shoppingTable .quantity-column, .shoppingTable .price-column {
+width: 80px; 
+text-align: center;
+}
 
-  .testings td {
-    border: none;
-    border-right: none;
-  }
+.testings td {
+border: none;
+border-right: none;
+}
+
+.emptyCart td {
+border: none;
+font-size: medium;
+}
 
   

@@ -6,7 +6,7 @@ function shoppingCartView() {
 <th></th>
 <th></th>
 <th></th>
-<th>Antall</th>
+<th>&nbsp; &nbsp; Antall</th>
 <th>Pris</th>
 </tr>
 
@@ -30,6 +30,12 @@ function shoppingCartView() {
 }
 
 html += /*HTML*/ `
+<tr class="emptyCart">
+    <td colspan="4"></td>
+    <td><u>Tøm handlevogn</u></td>
+    <td id="total-sum"></td>
+</tr>
+
 <tr class="testings">
     <td colspan="3"></td>
     <td>Totalt:</td>
