@@ -61,7 +61,7 @@ const model = {
 
 				{
 					productId: 124,
-					count: 1,
+					count: 0,
 					name: "Topptur™ turtopp",
 					description: "En turkopp i prima kvalitet som holder varmen lenge.",
 					price: 1750,
@@ -71,7 +71,7 @@ const model = {
 
 				{
 					productId: 125,
-					count: 1,
+					count: 0,
 					name: "Hatt til katt",
 					description: "Alle katters store drøm, en egen hatt!",
 					price: 300,
