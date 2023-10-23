@@ -171,7 +171,7 @@ const model = {
 			},
 		],
 
-		logo: "https://educationaltechnology.net/wp-content/uploads/2019/12/albert-bandura.jpg",
+		logo: "images/logo.PNG",
 	},
 };
 
