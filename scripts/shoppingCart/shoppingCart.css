@@ -75,6 +75,7 @@ text-align: center;
 .testings td {
 border: none;
 border-right: none;
+font-size: large;
 }
 
 .emptyCart td {
@@ -83,4 +84,10 @@ font-size: medium;
 cursor: pointer;
 }
 
+.pris {
+font-size: large;
+}
   
+.upperText {
+font-size: large;
+}

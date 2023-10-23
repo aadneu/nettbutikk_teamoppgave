@@ -6,8 +6,8 @@ function shoppingCartView() {
 <th></th>
 <th></th>
 <th></th>
-<th>&nbsp; &nbsp; Antall</th>
-<th>Pris</th>
+<th class="upperText">&nbsp; &nbsp; &nbsp; Antall</th>
+<th class="upperText">Pris</th>
 </tr>
 
 `;
@@ -24,14 +24,14 @@ function shoppingCartView() {
 <span><input type="text" class="customInput" id="count-${i}" value="${items[i].count}" readOnly></span>
 <button class ="plus" onclick="addItems(${i})">➕</button>
 </td>
-<td>${items[i].price} </td> 
+<td class="pris">${items[i].price} </td> 
 <tr>
 `;
 }
 
 html += /*HTML*/ `
 <tr class="emptyCart">
-    <td colspan="4"></td>
+    <td colspan="3"></td>
     <td><u>Tøm handlevogn</u></td>
 </tr>
 
