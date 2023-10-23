@@ -12,6 +12,8 @@ const model = {
 			"newuser",
 		],
 
+		currentCategory: "",
+
 		currentView: "main",
 
 		loggedIn: true,
@@ -106,7 +108,7 @@ const model = {
 			},
 		],
 
-		categories: ["Mat", "Hatter til katter", "Terje merch"],
+		categories: ["Mat", "Tilbehør", "Merch"],
 
 		about: {
 			companyDesc: "",
@@ -151,7 +153,20 @@ const model = {
 				image: [
 					"https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
 				],
-				category: "Mat",
+				category: "Tilbehør",
+				instock: true,
+			},
+			{
+				title: "Terje T-shirt",
+				id: 421,
+				description: "Spice it up",
+				shortDesc: "Spice it down and around",
+				price: 7500,
+				stars: 5,
+				image: [
+					"https://getacademy.no/hs-fs/hubfs/12-Sep-12-2023-07-34-46-3774-AM.png?width=940&height=788&name=12-Sep-12-2023-07-34-46-3774-AM.png",
+				],
+				category: "Merch",
 				instock: true,
 			},
 		],
@@ -176,4 +191,3 @@ const model = {
 // model.data.products
 
 // model.data.products.push(productFactory('Ja', '421','Enig', 50, 5, 'somesource', 'utsagn', true))
-const pedobear = "creepy";
