@@ -33,4 +33,10 @@ function emptyCart() {
     
 }
 
+function discount() {
+let rabattkodeInput = document.getElementById('rabattkode');
+let rabattkode = rabattkodeInput.value;
+
+}
+
 //Her kommer funksjonen til knapper
