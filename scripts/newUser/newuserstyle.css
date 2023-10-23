@@ -1,0 +1,10 @@
+.centercontent{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.smallerFontSize{
+    font-size: smaller;
+    padding: 1px;
+}

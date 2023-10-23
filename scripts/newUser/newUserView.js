@@ -1,25 +1,25 @@
 function newUserView() {
 	let html = /*html*/ `
-    <div>Fyll ut:</div>
+   <div class='centercontent'>
+        <form id="userForm">
+        <div >Fyll ut:</div>
+
+        <div><input placeholder = 'name'>*</div>
+        <div><input id='newpassword' placeholder = 'Password' type="password">*</div>
+        <div><input id='newrepeatpassword' placeholder = 'Repeat password'type="password">*</div>
+        <div><input id='newemail' placeholder = 'E-mail' type="text">*</div>
+        <div><input placeholder = 'Adress' type="text"></div>
+        <div><input placeholder = 'Zipcode' type="text"></div>
+        <div><input placeholder = 'City' type="text"></div>
+        <div><input placeholder = 'Phone' type="number"></div>
+        
+        <div class='smallerFontSize'>* Må fylles ut</div>
+
+        <div><button type="button" onclick="createNewUser()">Lag ny bruker</button></div>
+    </form>
     
-    <div>Name: <input id='newname' type="text">*</div>
-    <div>Password: <input id='newpassword'  type="password">*</div>
-    <div>Repeat password: <input id='newrepeatpassword' type="password">*</div>
-    <div>Email: <input id='newemail'  type="text">*</div>
-    <div>Adress: <input type="text"></div>
-    <div>Zipcode: <input type="text"></div>
-    <div>City: <input type="text"></div>
-    <div>Phone: <input type="number"></div>
-    <div>*Må fylles ut</div>
-    <div><button onclick='createNewUser()'>Lag ny bruker</button></div>
-
-    <!--<div>Fyll ut:</div>
-<form id="userForm">
-    <div><input onchange="model.inputs.profile.newuser.name = this.value" placeholder = 'name'></div>
-
-  <button type="button" onclick="createNewUser()">Lag ny bruker</button>
-</form>
--->
+    
+    </div>
     `;
 	return html;
 }

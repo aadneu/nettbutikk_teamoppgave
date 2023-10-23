@@ -98,7 +98,7 @@ const model = {
 			},
 			{
 				name: "Ben Dover",
-				password: "",
+				password: "bendover",
 				email: "getin@getacademy.no",
 				adress: "Railingstreet 4",
 				zipcode: "6969",
