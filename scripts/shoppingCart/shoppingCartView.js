@@ -33,7 +33,6 @@ html += /*HTML*/ `
 <tr class="emptyCart">
     <td colspan="4"></td>
     <td><u>Tøm handlevogn</u></td>
-    <td id="total-sum"></td>
 </tr>
 
 <tr class="testings">

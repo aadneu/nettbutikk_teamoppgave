@@ -80,6 +80,7 @@ border-right: none;
 .emptyCart td {
 border: none;
 font-size: medium;
+cursor: pointer;
 }
 
   
