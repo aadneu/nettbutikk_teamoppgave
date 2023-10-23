@@ -5,19 +5,19 @@
     margin-bottom: 50px;
     border-collapse: collapse;
     } 
-    
-    .cartImage {
-    width: 90px;
-    height: 75px;
-    image-rendering: -webkit-optimize-contrast;
-    }
-    
+
     .shoppingTable th,
     .shoppingTable td {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     padding: 8px;
     text-align: left;
+    }
+    
+    .cartImage {
+    width: 90px;
+    height: 75px;
+    image-rendering: -webkit-optimize-contrast;
     }
     
     input.customInput {    
@@ -48,6 +48,7 @@
     .description-cell {
     font-size: 14px;
     font-style: italic;
+    font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
@@ -62,21 +63,13 @@
     border: none; 
     }
       
-    .shoppingTable .description-cell {
-    font-size: 14px;
-    font-weight: bold;
-    }
-      
-    .shoppingTable .quantity-column,
-    .shoppingTable .price-column {
-    width: 80px; 
-    text-align: center;
-    }
-    
     .testings td {
     border: none;
     border-right: none;
     font-size: large;
+    max-width: 100px;
+    overflow: hidden; 
+    white-space: nowrap; 
     }
     
     .emptyCart td {
@@ -85,16 +78,7 @@
     cursor: pointer;
     }
     
-    .pris {
-    font-size: large;
-    }
-      
-    .upperText {
+    .pris, .upperText {
     font-size: large;
     }
     
-    #total-sum {
-    max-width: 100px;
-    overflow: hidden; 
-    white-space: nowrap; 
-    }
