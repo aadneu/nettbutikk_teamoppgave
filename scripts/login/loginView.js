@@ -7,12 +7,12 @@ function loginView() {
         <br>
         <div class='smallerFontSize'>Skriv inn e-post og passord</div>
 
-        <div><input placeholder = 'E-mail'></div>
-        <div><input id='newpassword' placeholder = 'Password' type="password"></div>
+        <div><input oninput='model.inputs.login.email = this.value' placeholder = 'E-mail'></div>
+        <div><input oninput='model.inputs.login.password = this.value' placeholder = 'Password' type="password"></div>
         <div class='smallerFontSize'>Husk meg: <input type="checkbox"></div>
         
         <div>
-            <button>Login</button>
+            <button onclick='loginButton()'>Login</button>
             <button onclick='changeView("newuser")'>Registrer ny bruker</button>
         </div>
         
@@ -22,6 +22,25 @@ function loginView() {
 	return html;
 }
 
+function loginButton(){
+    const login = model.inputs.login
+    const users = model.data.users
+    
+    for (let i = 1; i < users.length; i++){
+        if (login.email === users[i].email && login.password === users[i].password){
+            model.app.loggedIn = true
+            return true;
+        }
+    }
+    return false;
+}
+
+
+function isLoggedInButton() {
+    return model.app.loggedIn
+        ? `<button onclick="changeView('profile')">*Min side icon*</button>`
+        : `<button onclick="changeView('login')">*Login Icon*</button>`;
+}
 
 function userLogin(){
     const users = model.data.users
