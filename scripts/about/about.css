@@ -6,11 +6,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
 .boxes2 {
     display: flex;
     justify-content: center;
-
 }
 .overskrift {
     background-color: olive;
@@ -31,28 +31,28 @@
     width: 50vw;
     height: 50px;
     position: absolute;
-    top: 1px;
+    top: 46px;
 
 }
 .box2 {
     border: 2px solid black;
     width: 50vw;
-    height: 120px;
-    top: 55px;
+    height: 100px;
+    top: 100px;
     position: absolute;
 }
 .box3 {
     border: 2px solid black;
     width: 50vw;
     height: 50px;
-    top: 200px;
+    top: 210px;
     position: absolute;
 }
 .box4 {
     border: 2px solid black;
     width: 50vw;
-    height: 120px;
-    top: 254px;
+    height: 100px;
+    top: 260px;
     position: absolute;
 }
 .box5 {
@@ -66,7 +66,7 @@
 .box7 {
     border: 3px solid black;
     width: 51vw;
-    height: 470px;
-    top: 500px;
-    position: absolute;
+    height: 47.5vh;
+    top: 0px;
+    position: sticky;
 }
