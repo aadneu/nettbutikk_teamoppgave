@@ -38,7 +38,7 @@ html += /*HTML*/ `
 <tr class="testings">
     <td colspan="3"></td>
     <td>Totalt:</td>
-    <td id="total-sum"></td>
+    <td id="total-sum">0,00 kr</td>
 </tr>
 <tr class="testings">
     <td colspan="3"></td>

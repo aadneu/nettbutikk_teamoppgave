@@ -24,8 +24,8 @@ let items = model.inputs.shoppingCart.items;
 for (let i = 0; i < items.length; i++) {
 totalSum += items[i].count * items[i].price;
 }
-document.getElementById('total-sum').textContent = `Totalt: ${totalSum.toFixed(2)} kr`;
-
+let totalSumElement = document.getElementById('total-sum');
+totalSumElement.textContent = `${totalSum.toFixed(2)} kr`;
 
 }
 
