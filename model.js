@@ -53,7 +53,8 @@ const model = {
 					name: "Ekte farse fra Jæren",
 					description: "Eksklusivt farse dinner-kit, limited edition!",
 					price: 1200, // Pris i NOK
-					image: "https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
+					image:
+						"https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
 				},
 
 				{
@@ -72,7 +73,8 @@ const model = {
 					name: "Hatt til katt",
 					description: "Alle katters store drøm, en egen hatt!",
 					price: 300,
-					image: "https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
+					image:
+						"https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
 				},
 			],
 		},
@@ -135,6 +137,19 @@ const model = {
 				stars: 5,
 				image: [
 					"https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
+				],
+				category: "Mat",
+				instock: true,
+			},
+			{
+				title: "Hatter til Katter",
+				id: 421,
+				description: "Spice it up",
+				shortDesc: "Spice it down",
+				price: 75,
+				stars: 5,
+				image: [
+					"https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
 				],
 				category: "Mat",
 				instock: true,

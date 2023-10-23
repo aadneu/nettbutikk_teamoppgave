@@ -12,14 +12,13 @@ function viewApp() {
     </div></div>
         <div id='left'>LEFT ${viewList()}</div>
         <div id='right'>RIGHT</div>
-        <div id='innhold'>${pageView()}
-                  </div>
+        <div id='innhold'>${pageView()}</div>
     </div>
 
     <div id='footer'>Ferdsel på eget ansvar</div>
     `;
 
-	app.innerHTML = html;     
+	app.innerHTML = html;
 }
 
 function pageView() {

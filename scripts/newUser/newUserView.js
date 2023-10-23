@@ -1,6 +1,6 @@
-function newUserView(){
-    let html = /*html*/ `
-    <!-- <div>Fyll ut:</div>
+function newUserView() {
+	let html = /*html*/ `
+    <div>Fyll ut:</div>
     
     <div>Name: <input id='newname' type="text">*</div>
     <div>Password: <input id='newpassword'  type="password">*</div>
@@ -11,15 +11,15 @@ function newUserView(){
     <div>City: <input type="text"></div>
     <div>Phone: <input type="number"></div>
     <div>*Må fylles ut</div>
-    <div><button onclick='createNewUser()'>Lag ny bruker</button></div> -->
+    <div><button onclick='createNewUser()'>Lag ny bruker</button></div>
 
-    <div>Fyll ut:</div>
+    <!--<div>Fyll ut:</div>
 <form id="userForm">
     <div><input onchange="model.inputs.profile.newuser.name = this.value" placeholder = 'name'></div>
 
   <button type="button" onclick="createNewUser()">Lag ny bruker</button>
 </form>
-
+-->
     `;
-    return html;
+	return html;
 }
