@@ -37,9 +37,9 @@
 
 #footer {
     background-color: rgb(100, 245, 209);
-    grid-area: footer;
     font-size: 300%;
     text-align: center;
+    grid-area: footer;
 }
 
 #logo {

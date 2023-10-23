@@ -4,20 +4,18 @@ viewApp();
 function viewApp() {
 	let html = /*HTML*/ `
     <div id='page'>
-        <div id='header'>HEADER${createHeaderHTML()}</div>
-        <div id='meny'><div>
-      <button onclick="changeView('main')">Hjem</button>
-      <button onclick="changeView('category')">Produkter</button>
-      <button onclick="changeView('about')">Om oss</button>
-    </div></div>
-        <div id='left'>LEFT ${viewList()}</div>
-        <div id='right'>RIGHT</div>
+        <div id='header'>${createHeaderHTML()}</div>
+        <div id='meny'>
+				<button onclick="changeView('main')">Hjem</button>
+				<button onclick="changeView('category')">Produkter</button>
+				<button onclick="changeView('about')">Om oss</button>
+				</div>
+        <div id='left'></div>
         <div id='innhold'>${pageView()}</div>
-    </div>
-
-    <div id='footer'>Ferdsel på eget ansvar</div>
+        <div id='right'></div>
+				<div id='footer'>Ferdsel på eget ansvar</div>
+			</div>	
     `;
-
 	app.innerHTML = html;
 }
 
@@ -53,6 +51,5 @@ function createHeaderHTML() {
     <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
     <button onclick="changeView('newuser')">*Registrer icon*</button>
     <button onclick="changeView('login')">*Login Icon*</button> <br>
-    
   `;
 }
