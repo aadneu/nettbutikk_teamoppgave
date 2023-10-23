@@ -1,99 +1,99 @@
 .shoppingTable {
-width: 100%;
-height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-margin-bottom: 50px;
-border-collapse: collapse;
-} 
-
-.cartImage {
-width: 90px;
-height: 75px;
-image-rendering: -webkit-optimize-contrast;
-}
-
-.shoppingTable th,
-.shoppingTable td {
-border-bottom: 1px solid black;
-border-top: 1px solid black;
-padding: 8px;
-text-align: left;
-}
-
-input.customInput {    
-width: 30px;
-height: 30px;
-border: 1px solid black;
-text-align: center;
-border-radius: 5px;
-font-weight: bold;
-} 
-
-input.rabatt {
-width: 100px;
-height: 20px;
-}
-
-table button.minus,
-table button.plus{
-background-color: blanchedalmond;
-width: 30px;
-height: 30px;
-line-height: 30px;
-text-align: center;
-margin: 0;
-border: none;
-}
-
-.description-cell {
-font-size: 14px;
-font-style: italic;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.kasseKlikk {
-height: 40px;
-width: 100px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: bold;
-}
-
-.shoppingTable th {
-    border: none; /* Fjerner grensene for kolonnenavnene */
-}
-  
-.shoppingTable .description-cell {
-    font-size: 14px;
+    width: 100%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    } 
+    
+    .cartImage {
+    width: 90px;
+    height: 75px;
+    image-rendering: -webkit-optimize-contrast;
+    }
+    
+    .shoppingTable th,
+    .shoppingTable td {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    }
+    
+    input.customInput {    
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
     font-weight: bold;
-}
-  
-.shoppingTable .quantity-column, .shoppingTable .price-column {
-width: 80px; 
-text-align: center;
-}
-
-.testings td {
-border: none;
-border-right: none;
-font-size: large;
-}
-
-.emptyCart td {
-border: none;
-font-size: medium;
-cursor: pointer;
-}
-
-.pris {
-font-size: large;
-}
-  
-.upperText {
-font-size: large;
-}
-
-#total-sum {
-max-width: 100px;
-overflow: hidden; 
-white-space: nowrap; 
-}
+    } 
+    
+    input.rabatt {
+    width: 100px;
+    height: 20px;
+    }
+    
+    table button.minus,
+    table button.plus{
+    background-color: blanchedalmond;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    border: none;
+    }
+    
+    .description-cell {
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .kasseKlikk {
+    height: 40px;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    }
+    
+    .shoppingTable th {
+    border: none; 
+    }
+      
+    .shoppingTable .description-cell {
+        font-size: 14px;
+        font-weight: bold;
+    }
+      
+    .shoppingTable .quantity-column, .shoppingTable .price-column {
+    width: 80px; 
+    text-align: center;
+    }
+    
+    .testings td {
+    border: none;
+    border-right: none;
+    font-size: large;
+    }
+    
+    .emptyCart td {
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+    }
+    
+    .pris {
+    font-size: large;
+    }
+      
+    .upperText {
+    font-size: large;
+    }
+    
+    #total-sum {
+    max-width: 100px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    }
