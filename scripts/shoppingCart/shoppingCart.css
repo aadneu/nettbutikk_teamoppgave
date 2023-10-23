@@ -91,3 +91,9 @@ font-size: large;
 .upperText {
 font-size: large;
 }
+
+#total-sum {
+max-width: 100px;
+overflow: hidden; 
+white-space: nowrap; 
+}

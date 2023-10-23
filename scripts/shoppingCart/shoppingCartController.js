@@ -25,6 +25,8 @@ for (let i = 0; i < items.length; i++) {
 totalSum += items[i].count * items[i].price;
 }
 document.getElementById('total-sum').textContent = `Totalt: ${totalSum.toFixed(2)} kr`;
+
+
 }
 
 function emptyCart() {
