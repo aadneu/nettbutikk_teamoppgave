@@ -49,7 +49,6 @@ function createHeaderHTML() {
     <input id='search' type='text' placeholder='Søk'>
     <button onclick="">🔍</button>
     <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
-    <button onclick="changeView('newuser')">*Registrer icon*</button>
     ${isLoggedInButton()}
      <br>
   `;
