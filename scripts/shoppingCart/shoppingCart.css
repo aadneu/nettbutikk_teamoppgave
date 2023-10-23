@@ -63,11 +63,12 @@
     }
       
     .shoppingTable .description-cell {
-        font-size: 14px;
-        font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
     }
       
-    .shoppingTable .quantity-column, .shoppingTable .price-column {
+    .shoppingTable .quantity-column,
+    .shoppingTable .price-column {
     width: 80px; 
     text-align: center;
     }
