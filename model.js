@@ -16,9 +16,9 @@ const model = {
 
 		currentView: "main",
 
-		loggedIn: false,
+		loggedIn: true,
 
-		loggedInAs: "T2",
+		loggedInAs: "t2",
 	},
 	salamander: {
 		firfisle: ["firfisle"],
