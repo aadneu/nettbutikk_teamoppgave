@@ -51,7 +51,7 @@ const model = {
 			items: [
 				{
 					productId: 123,
-					count: 1,
+					count: 0,
 					name: "Ekte farse fra Jæren",
 					description: "Eksklusivt farse dinner-kit, limited edition!",
 					price: 1200, // Pris i NOK
