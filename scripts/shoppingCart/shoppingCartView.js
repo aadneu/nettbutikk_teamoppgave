@@ -24,7 +24,7 @@ function shoppingCartView() {
 <span><input type="text" class="customInput" id="count-${i}" value="${items[i].count}" readOnly></span>
 <button class ="plus" onclick="addItems(${i})">➕</button>
 </td>
-<td> Pris: ${items[i].price} </td> 
+<td>${items[i].price} </td> 
 <tr>
 `;
 }
