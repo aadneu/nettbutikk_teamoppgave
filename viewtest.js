@@ -10,7 +10,7 @@ function viewApp() {
 				<button onclick="changeView('category')">Produkter</button>
 				<button onclick="changeView('about')">Om oss</button>
 				</div>
-        <div id='left'></div>
+        <div id='left'>${viewList()}</div>
         <div id='innhold'>${pageView()}</div>
         <div id='right'></div>
 				<div id='footer'>Ferdsel på eget ansvar</div>
