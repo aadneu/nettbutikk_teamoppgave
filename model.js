@@ -41,7 +41,7 @@ const model = {
 				password: "",
 				repeatpassword: "",
 				email: "",
-				adress: "",
+				address: "",
 				zipcode: "",
 				city: "",
 				phone: "",
