@@ -11,9 +11,9 @@ function shoppingCartView() {
 </tr>
 
 `;
-	let items = model.inputs.shoppingCart.items;
+let items = model.inputs.shoppingCart.items;
 
-	for (let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
 <td><image class="cartImage" src= "${items[i].image}"></td>
