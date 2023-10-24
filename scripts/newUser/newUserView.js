@@ -16,6 +16,7 @@ function newUserView() {
         <div><input oninput='newuser.phone = this.value' placeholder = 'Phone' type="number"></div>
         
         <div class='smallerFontSize'></div>
+        <div style='color: red' class='smallerFontSizeRed'>${outputNewUser}</div>
 
         <div><button type="button" onclick="createNewUser()">Opprett konto</button></div>
         </div>
