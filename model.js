@@ -85,8 +85,8 @@ const model = {
 					productId: 126,
 					count: 0,
 					name: "Terje t-skjorte",
-					description: "test",
-					price: 300,
+					description: "T-skjorter brukt av Terje, LIMITED EDITION!",
+					price: 7500,
 					image:
 						"https://getacademy.no/hs-fs/hubfs/12-Sep-12-2023-07-34-46-3774-AM.png?width=940&height=788&name=12-Sep-12-2023-07-34-46-3774-AM.png",
 				},
