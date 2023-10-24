@@ -32,7 +32,7 @@
     } 
     
     input.rabatt {
-    width: 100px;
+    width: 80px;
     height: 20px;
     }
     
@@ -89,3 +89,8 @@
     font-size: large;
     }
     
+    .tilKassen {
+    height: 30px;
+    width: 30px;
+    background-color: white; 
+    }

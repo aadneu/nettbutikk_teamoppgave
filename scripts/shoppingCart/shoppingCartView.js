@@ -49,6 +49,10 @@ html += /*HTML*/ `
 <td colspan="4"></td>
 <td colspan="2"><button class="applyDiscountButton" onclick="applyDiscount()"> Bruk rabatt</button></td>
 </tr>
+<tr class="testings">
+<td colspan="4"></td>
+<td colspan="2"><button class="tilKassen">➜</button></td>
+</tr>
 `;
 
 	html += /*HTML*/ `
