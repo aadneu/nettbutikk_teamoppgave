@@ -46,8 +46,8 @@ html += /*HTML*/ `
     <td><input class="rabatt" type="text" id="rabattkode" placeholder="Aalto23"></td>
 </tr>
 <tr class="testings">
-    <td colspan="4"></td>
-    <td colspan="2"><button class="kasseKlikk" onclick="goToCashier()">Til kassen</button></td>
+<td colspan="4"></td>
+<td colspan="2"><button class="applyDiscountButton" onclick="applyDiscount()"> Bruk rabatt</button></td>
 </tr>
 `;
 

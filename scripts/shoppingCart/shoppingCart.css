@@ -77,6 +77,11 @@
     font-size: medium;
     cursor: pointer;
     }
+
+    .applyDiscountButton {
+    color: red;
+    height: 26px;
+    }
     
     .pris, .upperText {
     font-size: large;
