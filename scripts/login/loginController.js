@@ -8,10 +8,11 @@ function loginButton(){
             model.app.loggedIn = true;
             changeView('main')
             outputLogin = ''
+            model.app.currentUser = `${users[i].name}`
             break;
         } else { model.app.loggedIn = false; 
         outputLogin = 'Feil brukernavn/passord'
         viewApp();
         }
-        }
     }
+}

@@ -20,7 +20,7 @@ const model = {
 
 		loggedIn: false,
 
-		loggedInAs: ["t2"]
+		currentUser: ""
 	},
 	salamander: {
 		firfisle: ["firfisle"],

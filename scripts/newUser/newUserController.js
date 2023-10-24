@@ -31,6 +31,7 @@ function createNewUser() {
     }
     if (!emailexists) {
       addNewUser();
+      model.app.currentView = "login"
     } else {
       outputNewUser = "Denne emailen er allerede i bruk!";
     }
