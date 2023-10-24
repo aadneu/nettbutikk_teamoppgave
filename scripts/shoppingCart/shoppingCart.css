@@ -8,8 +8,8 @@
 
     .shoppingTable th,
     .shoppingTable td {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
     padding: 8px;
     text-align: left;
     }
