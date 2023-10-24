@@ -2,11 +2,23 @@ function mainView() {
 	let html = ``;
 	html = /*HTML*/ `
 	<div style='display: flex' class='container'>
-	<button>←</button>
-	<image id='leftpic' src="${model.data.products[0].image}">
-	<image src="${model.data.products[0].image}">
-	<image id='leftpic' src="${model.data.products[0].image}">
-	<button>→</button>
+	<button onclick="carouselLeft()">←</button>
+	<image id='leftpic' src="${
+		model.data.products[
+			model.app.carousel == 0
+				? model.data.products.length - 1
+				: model.app.carousel - 1
+		].image
+	}">
+	<image src="${model.data.products[model.app.carousel].image}">
+	<image id='leftpic' src="${
+		model.data.products[
+			model.app.carousel == model.data.products.length - 1
+				? 0
+				: model.app.carousel + 1
+		].image
+	}">
+	<button onclick="carouselRight()">→</button>
 	</div>
   <br>
   <div>

@@ -12,6 +12,8 @@ const model = {
 			"newuser",
 		],
 
+		carousel: 0,
+
 		currentCategory: "",
 
 		currentView: "main",
