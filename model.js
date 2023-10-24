@@ -133,10 +133,10 @@ const model = {
 				title: "Farse dinner-kit",
 				id: 420,
 				description:
-					"Lag mat til hele familien med dette fantastiske middags-kit'et",
+					"Lag mat til hele familien med dette fantastiske middags-kit'et, det maker tidooks otoktowktktotk otkokow tok tko kook twok tokwok to tkowtko  ",
 				shortDesc: "Jahåååda",
 				price: 150,
-				stars: 5,
+				stars: 3,
 				image: [
 					"https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
 				],
