@@ -6,6 +6,7 @@ function loginView() {
         <div>Innloggingsside</div>
         <br>
         <div class='smallerFontSize'>Skriv inn e-post og passord</div>
+        <div style='color: red' class='smallerFontSizeRed'></div>
 
         <div><input oninput='model.inputs.login.email = this.value' placeholder = 'E-mail'></div>
         <div><input oninput='model.inputs.login.password = this.value' placeholder = 'Password' type="password"></div>
@@ -26,39 +27,27 @@ function loginButton(){
     const login = model.inputs.login
     const users = model.data.users
     
-    for (let i = 1; i < users.length; i++){
+    for (let i = 0; i < users.length; i++){
         if (login.email === users[i].email && login.password === users[i].password){
             model.app.loggedIn = true
             return true;
+        } else {
+            
         }
     }
     return false;
 }
 
-function logOut(){
-    model.app.loggedIn = false
-    if (model.app.currentView = 'profile') {
-        model.app.currentView = 'main'
-    }
-    viewApp();
-}
-
-function isLoggedInButton() {
-    return model.app.loggedIn
-        ? `<button onclick="changeView('profile')">*Min side icon*</button> 
-        <button onclick="logOut()">*Logg ut icon*</button>`
-        : `<button onclick="changeView('newuser')">*Registrer icon*</button>
-        <button onclick="changeView('login')">*Login Icon*</button>
-        `;
-}
 
 
 
-function userLogin(){
-    const users = model.data.users
 
-    if (users.email[i] && users.password[i]){
+
+// function userLogin(){
+//     const users = model.data.users
+
+//     if (users.email[i] && users.password[i]){
         
-    }
-}
+//     }
+// }
 

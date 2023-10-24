@@ -20,7 +20,7 @@ const model = {
 
 		loggedIn: true,
 
-		loggedInAs: "t2",
+		loggedInAs: ["t2"]
 	},
 	salamander: {
 		firfisle: ["firfisle"],
