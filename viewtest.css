@@ -24,9 +24,12 @@
 #meny {
     background-color: rgb(76, 241, 241);
     grid-area: meny;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex;
+    
+}
+#meny>button {
     cursor: pointer;
+    flex-grow: 1;
 }
 
 
@@ -44,7 +47,7 @@
 
 #logo {
     cursor:pointer;
-    
+
 }
 
 button {

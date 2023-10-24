@@ -10,7 +10,7 @@ function viewApp() {
 				<button onclick="changeView('category')">Produkter</button>
 				<button onclick="changeView('about')">Om oss</button>
 				</div>
-        <div id='left'>${viewList()}</div>
+        <div id='left'></div>
         <div id='innhold'>${pageView()}</div>
         <div id='right'></div>
 				<div id='footer'>Ferdsel på eget ansvar</div>
@@ -54,19 +54,19 @@ function createHeaderHTML() {
   `;
 }
 
-function logOut(){
-    model.app.loggedIn = false
-	if (model.app.currentView = 'profile') {
-        model.app.currentView = 'main'
-    }
-    viewApp();
+function logOut() {
+	model.app.loggedIn = false;
+	if ((model.app.currentView = "profile")) {
+		model.app.currentView = "main";
+	}
+	viewApp();
 }
 
 function isLoggedInButton() {
-    return model.app.loggedIn
-        ? `<button onclick="changeView('profile')">*Min side icon*</button> 
+	return model.app.loggedIn
+		? `<button onclick="changeView('profile')">*Min side icon*</button> 
         <button onclick="logOut()">*Logg ut icon*</button>`
-        : `<button onclick="changeView('newuser')">*Registrer icon*</button>
+		: `<button onclick="changeView('newuser')">*Registrer icon*</button>
         <button onclick="changeView('login')">*Login Icon*</button>
         `;
 }
