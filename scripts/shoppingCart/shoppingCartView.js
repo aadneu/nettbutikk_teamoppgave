@@ -25,7 +25,7 @@ for (let i = 0; i < items.length; i++) {
 <button class ="plus" onclick="addItems(${i})">➕</button>
 </td>
 <td class="pris">${items[i].price} </td> 
-<tr>
+</tr>
 `;
 }
 
