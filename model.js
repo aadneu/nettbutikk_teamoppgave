@@ -106,12 +106,8 @@ const model = {
 				name: "admin",
 				password: "t2",
 				email: "t2",
-				address: "Railingstreet 1",
-				zipcode: "420",
-				city: "Åsen",
-				phone: "66666666",
 				customerId: "0",
-				admin: false,
+				admin: true,
 			},
 			{
 				name: "Ben Dover",

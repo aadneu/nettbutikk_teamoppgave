@@ -6,7 +6,7 @@ function loginView() {
         <div>Innloggingsside</div>
         <br>
         <div class='smallerFontSize'>Skriv inn e-post og passord</div>
-        <div style='color: red' class='smallerFontSizeRed'></div>
+        <div style='color: red' class='smallerFontSizeRed'>${outputLogin}</div>
 
         <div><input oninput='model.inputs.login.email = this.value' placeholder = 'E-mail'></div>
         <div><input oninput='model.inputs.login.password = this.value' placeholder = 'Password' type="password"></div>
@@ -24,7 +24,7 @@ function loginView() {
 
 	return html;
 }
-
+let outputLogin = '';
 
 
 function loginButton(){
@@ -36,7 +36,9 @@ function loginButton(){
             model.app.loggedIn = true;
             changeView('main')
             break;
-        } else {model.app.loggedIn = false}
+        } else { model.app.loggedIn = false; 
+        outputLogin = 'Feil brukernavn/passord'
+        }
     
     }
     
