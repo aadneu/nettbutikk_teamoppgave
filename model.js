@@ -18,7 +18,7 @@ const model = {
 
 		currentView: "main",
 
-		loggedIn: true,
+		loggedIn: false,
 
 		loggedInAs: ["t2"]
 	},
@@ -103,20 +103,26 @@ const model = {
 	data: {
 		users: [
 			{
-				email: "t2",
+				name: "admin",
 				password: "t2",
+				email: "t2",
+				address: "Railingstreet 1",
+				zipcode: "420",
+				city: "Åsen",
+				phone: "66666666",
 				customerId: "0",
-				admin: true,
+				admin: false,
 			},
 			{
 				name: "Ben Dover",
-				password: "bendover",
-				email: "getin@getacademy.no",
-				adress: "Railingstreet 4",
+				password: "t1",
+				email: "t1",
+				address: "Railingstreet 4",
 				zipcode: "6969",
 				city: "Larvik",
 				phone: "42069420",
 				customerid: "1",
+				admin: false,
 			},
 		],
 
@@ -145,10 +151,10 @@ const model = {
 				title: "Farse dinner-kit",
 				id: 420,
 				description:
-					"Lag mat til hele familien med dette fantastiske middags-kit'et",
+					"Lag mat til hele familien med dette fantastiske middags-kit'et, det maker tidooks otoktowktktotk otkokow tok tko kook twok tokwok to tkowtko  ",
 				shortDesc: "Jahåååda",
 				price: 150,
-				stars: 5,
+				stars: 3,
 				image: [
 					"https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif",
 				],

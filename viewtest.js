@@ -56,7 +56,7 @@ function createHeaderHTML() {
 
 function logOut(){
     model.app.loggedIn = false
-    if (model.app.currentView = 'profile') {
+	if (model.app.currentView = 'profile') {
         model.app.currentView = 'main'
     }
     viewApp();
