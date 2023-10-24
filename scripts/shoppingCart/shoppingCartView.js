@@ -17,7 +17,7 @@ for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
 <td><image class="cartImage" src= "${items[i].image}"></td>
-<td>${items[i].name}</td>
+<td class="item-name">${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
 
 <td><button class="minus" onclick="removeItems(${i})">➖</button> 
