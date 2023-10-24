@@ -49,7 +49,24 @@ function createHeaderHTML() {
     <input id='search' type='text' placeholder='Søk'>
     <button onclick="">🔍</button>
     <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
-    <button onclick="changeView('newuser')">*Registrer icon*</button>
-    <button onclick="changeView('login')">*Login Icon*</button> <br>
+    ${isLoggedInButton()}
+     <br>
   `;
+}
+
+function logOut(){
+    model.app.loggedIn = false
+	if (model.app.currentView = 'profile') {
+        model.app.currentView = 'main'
+    }
+    viewApp();
+}
+
+function isLoggedInButton() {
+    return model.app.loggedIn
+        ? `<button onclick="changeView('profile')">*Min side icon*</button> 
+        <button onclick="logOut()">*Logg ut icon*</button>`
+        : `<button onclick="changeView('newuser')">*Registrer icon*</button>
+        <button onclick="changeView('login')">*Login Icon*</button>
+        `;
 }

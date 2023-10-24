@@ -12,13 +12,15 @@ const model = {
 			"newuser",
 		],
 
+		carousel: 0,
+
 		currentCategory: "",
 
 		currentView: "main",
 
-		loggedIn: true,
+		loggedIn: false,
 
-		loggedInAs: "T2",
+		loggedInAs: ["t2"]
 	},
 	salamander: {
 		firfisle: ["firfisle"],
@@ -78,12 +80,22 @@ const model = {
 					image:
 						"https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
 				},
+
+				{
+					productId: 126,
+					count: 0,
+					name: "Terje t-skjorte",
+					description: "T-skjorte brukt av Terje, LIMITED EDITION!",
+					price: 7500,
+					image:
+						"https://getacademy.no/hs-fs/hubfs/12-Sep-12-2023-07-34-46-3774-AM.png?width=940&height=788&name=12-Sep-12-2023-07-34-46-3774-AM.png",
+				},
 			],
 		},
 
 		login: {
 			existingUser: true, //if true: username, password -> logged in= true, else users.push({username, password})
-			username: "",
+			email: "",
 			password: "",
 		},
 	},
@@ -91,20 +103,26 @@ const model = {
 	data: {
 		users: [
 			{
-				username: "T2",
-				password: "",
-				customerId: "",
-				admin: true,
+				name: "admin",
+				password: "t2",
+				email: "t2",
+				address: "Railingstreet 1",
+				zipcode: "420",
+				city: "Åsen",
+				phone: "66666666",
+				customerId: "0",
+				admin: false,
 			},
 			{
 				name: "Ben Dover",
-				password: "bendover",
-				email: "getin@getacademy.no",
-				adress: "Railingstreet 4",
+				password: "t1",
+				email: "t1",
+				address: "Railingstreet 4",
 				zipcode: "6969",
 				city: "Larvik",
 				phone: "42069420",
 				customerid: "1",
+				admin: false,
 			},
 		],
 

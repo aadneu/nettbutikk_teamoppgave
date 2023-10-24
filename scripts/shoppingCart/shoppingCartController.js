@@ -24,13 +24,26 @@ let items = model.inputs.shoppingCart.items;
 for (let i = 0; i < items.length; i++) {
 totalSum += items[i].count * items[i].price;
 }
-document.getElementById('total-sum').textContent = `Totalt: ${totalSum.toFixed(2)} kr`;
-
+let totalSumElement = document.getElementById('total-sum');
+totalSumElement.textContent = `${totalSum.toFixed(2)} kr`;
 
 }
 
-function emptyCart() {
-    
+function emptyAll() {
+let items = model.inputs.shoppingCart.items;
+for (let i = 0; i < items.length; i++) {
+items[i].count = 0;    //La total sum gå til 0 igjen.
+
+let inputField = document.getElementById(`count-${i}`);
+inputField.value = 0;  //Få inputfeltene med antall varer til å nullstille seg også.
+}
+updateSum();
+}
+
+function discount() {
+let rabattkodeInput = document.getElementById('rabattkode');
+let rabattkode = rabattkodeInput.value;
+
 }
 
 //Her kommer funksjonen til knapper

@@ -11,9 +11,9 @@ function shoppingCartView() {
 </tr>
 
 `;
-	let items = model.inputs.shoppingCart.items;
+let items = model.inputs.shoppingCart.items;
 
-	for (let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
 <td><image class="cartImage" src= "${items[i].image}"></td>
@@ -32,13 +32,13 @@ function shoppingCartView() {
 html += /*HTML*/ `
 <tr class="emptyCart">
     <td colspan="3"></td>
-    <td><u>Tøm handlevogn</u></td>
+    <td><u onclick="emptyAll()">Tøm handlevogn</u></td>
 </tr>
 
 <tr class="testings">
     <td colspan="3"></td>
     <td>Totalt:</td>
-    <td id="total-sum"></td>
+    <td id="total-sum">0.00 kr</td>
 </tr>
 <tr class="testings">
     <td colspan="3"></td>
@@ -46,8 +46,8 @@ html += /*HTML*/ `
     <td><input class="rabatt" type="text" id="rabattkode" placeholder="Aalto23"></td>
 </tr>
 <tr class="testings">
-    <td colspan="4"></td>
-    <td colspan="2"><button class="kasseKlikk" onclick="goToCashier()">Til kassen</button></td>
+<td colspan="4"></td>
+<td colspan="2"><button class="applyDiscountButton" onclick="applyDiscount()"> Bruk rabatt</button></td>
 </tr>
 `;
 
