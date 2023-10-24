@@ -1,21 +1,28 @@
 const newuser = model.inputs.profile.newuser
 const existingusers = model.data.users
 
-let nameInput = newuser.name
 
+const userCreator = (name, password, email, address, zipcode, city, phone) => {
+    return { name, password, email, address, zipcode, city, phone }
+    }
 
-// {/* <input onchange="model.inputs.profile.newuser.name = this.value" placeholder = 'name'> */}
-
-function updateInput(value) { //kode fra chatgpt
-    nameInput = value;
+function addNewUser(){
+ existingusers.push(userCreator(
+        newuser.name, 
+        newuser.password, 
+        newuser.email, 
+        newuser.address,
+        newuser.zipcode,
+        newuser.city,
+        newuser.phone))
 }
 
 function createNewUser(){
-    existingusers.push({
-        name: nameInput,
-
-    })
+    if(newuser.password === newuser.repeatpassword){
+        addNewUser();
+    }
 }
+
 
 
 
