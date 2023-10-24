@@ -18,7 +18,7 @@ const model = {
 
 		currentView: "main",
 
-		loggedIn: true,
+		loggedIn: false,
 
 		loggedInAs: ["t2"]
 	},
@@ -103,20 +103,26 @@ const model = {
 	data: {
 		users: [
 			{
-				email: "t2",
+				name: "admin",
 				password: "t2",
+				email: "t2",
+				address: "Railingstreet 1",
+				zipcode: "420",
+				city: "Åsen",
+				phone: "66666666",
 				customerId: "0",
-				admin: true,
+				admin: false,
 			},
 			{
 				name: "Ben Dover",
-				password: "bendover",
-				email: "getin@getacademy.no",
-				adress: "Railingstreet 4",
+				password: "t1",
+				email: "t1",
+				address: "Railingstreet 4",
 				zipcode: "6969",
 				city: "Larvik",
 				phone: "42069420",
 				customerid: "1",
+				admin: false,
 			},
 		],
 
