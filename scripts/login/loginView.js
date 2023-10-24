@@ -35,9 +35,11 @@ function loginButton(){
         if (login.email === users[i].email && login.password === users[i].password){
             model.app.loggedIn = true;
             changeView('main')
+            outputLogin = ''
             break;
         } else { model.app.loggedIn = false; 
         outputLogin = 'Feil brukernavn/passord'
+        viewApp();
         }
     
     }
