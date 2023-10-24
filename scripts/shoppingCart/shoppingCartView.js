@@ -32,7 +32,7 @@ for (let i = 0; i < items.length; i++) {
 html += /*HTML*/ `
 <tr class="emptyCart">
     <td colspan="3"></td>
-    <td><u>Tøm handlevogn</u></td>
+    <td><u onclick="emptyAll()">Tøm handlevogn</u></td>
 </tr>
 
 <tr class="testings">

@@ -29,8 +29,15 @@ totalSumElement.textContent = `${totalSum.toFixed(2)} kr`;
 
 }
 
-function emptyCart() {
-    
+function emptyAll() {
+let items = model.inputs.shoppingCart.items;
+for (let i = 0; i < items.length; i++) {
+items[i].count = 0;    //La total sum gå til 0 igjen.
+
+let inputField = document.getElementById(`count-${i}`);
+inputField.value = 0;  //Få inputfeltene med antall varer til å nullstille seg også.
+}
+updateSum();
 }
 
 function discount() {
