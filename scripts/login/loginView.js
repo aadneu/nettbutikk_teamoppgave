@@ -6,7 +6,7 @@ function loginView() {
         <div>Innloggingsside</div>
         <br>
         <div class='smallerFontSize'>Skriv inn e-post og passord</div>
-        <div style='color: red' class='smallerFontSizeRed'>${outputLogin}</div>
+        <div style='color: red' class='smallerFontSize'>${outputLogin}</div>
 
         <div><input oninput='model.inputs.login.email = this.value' placeholder = 'E-mail'></div>
         <div><input oninput='model.inputs.login.password = this.value' placeholder = 'Password' type="password"></div>
