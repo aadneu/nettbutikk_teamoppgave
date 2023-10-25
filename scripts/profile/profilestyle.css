@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin-top: 1%;
+    font-size: xx-large
 }
 
 .profilediv{
@@ -11,9 +12,10 @@
     grid-template-rows: 1fr;
     grid-template-areas: 'left right';
     margin-top: 3%;
+    margin-left: 3%;
 }
 .profileheaders{
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     font-size: xx-large;
 }
 

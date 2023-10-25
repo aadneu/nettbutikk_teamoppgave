@@ -5,9 +5,9 @@ function profileView() {
                 
     <div class='profilediv'>
             <div id='venstre'>
-        <div class='profileheaders'>Brukeropplysninger</div>
-        <div>Liste med navn, nummer, etc.</div>
-        <div><button>knapp for å endre brukerinformasjon</button></div>
+        <div style='margin-bottom: 6%' class='profileheaders'>Brukeropplysninger</div>
+        <div>${fetchUserInfo()}</div>
+        <div><button>Endre opplysninger</button></div>
             </div>
 
             <div id='høyre'>
@@ -15,9 +15,6 @@ function profileView() {
         <div>${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}</div>
             </div>
     </div>   
-        
-    
-
     `;
 
 	return html;

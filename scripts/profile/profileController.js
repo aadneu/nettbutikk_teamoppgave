@@ -6,8 +6,28 @@ function listOrders() {
 	return orderList;
 }
 
+function fetchUserInfo(){
+	const existingusers = model.data.users
+	let userobject = null
+	for(i = 0; i < existingusers.length; i++){
+		if(model.app.currentUser === existingusers[i].name){
+			userobject =`${listUserInfo()}
+				`;	
+			break;
+		}	
+	}
+	return userobject;
+}
 
-
-// function showUserInfo(){
-// 	if (model.app.currentUser)
-// }
+function listUserInfo(){
+	let html = `
+	<div>${existingusers[i].name}</div>
+	<div>${existingusers[i].password}</div>
+	<div>${existingusers[i].email}</div>
+	<div>${existingusers[i].address}</div>
+	<div>${existingusers[i].zipcode}</div>
+	<div>${existingusers[i].city}</div>
+	<div>${existingusers[i].phone}</div> 
+	`;
+	return html;
+}

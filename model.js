@@ -122,6 +122,17 @@ const model = {
 				customerid: "1",
 				admin: false,
 			},
+			{
+				name: "Ådne",
+				password: "å",
+				email: "å",
+				address: "Railingstreet 4",
+				zipcode: "6969",
+				city: "Bryne",
+				phone: "42069420",
+				customerid: "2",
+				admin: false,
+			},
 		],
 
 		categories: ["Mat", "Tilbehør", "Merch"],
