@@ -187,7 +187,7 @@ const model = {
 			{
 				title: "Terje T-shirt",
 				id: 422,
-				description: "Spice it up",
+				description: "Spice it sideways",
 				shortDesc: "Spice it down and around",
 				price: 7500,
 				stars: 4,
