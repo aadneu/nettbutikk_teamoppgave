@@ -6,7 +6,7 @@ function loginView() {
         <div>Innloggingsside</div>
         <br>
         <div class='smallerFontSize'>Skriv inn e-post og passord</div>
-        <div style='color: red' class='smallerFontSizeRed'></div>
+        <div style='color: red' class='smallerFontSize'>${outputLogin}</div>
 
         <div><input oninput='model.inputs.login.email = this.value' placeholder = 'E-mail'></div>
         <div><input oninput='model.inputs.login.password = this.value' placeholder = 'Password' type="password"></div>
@@ -27,20 +27,7 @@ function loginView() {
 
 
 
-function loginButton(){
-    const login = model.inputs.login
-    const users = model.data.users
-    
-    for (let i = 0; i < users.length; i++){
-        if (login.email === users[i].email && login.password === users[i].password){
-            model.app.loggedIn = true;
-            changeView('main')
-            break;
-        } else {model.app.loggedIn = false}
-    
-    }
-    
-}
+
 
 
 

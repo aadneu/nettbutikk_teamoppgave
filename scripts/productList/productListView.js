@@ -1,16 +1,18 @@
-function productListView(category) {
+function productListView() {
 	let html = ``;
 
+	//looper igjennom alle produkter, og viser frem alle som matcher den nåværende kategorien fra modellen
+
 	for (let i = 0; i < model.data.products.length; i++) {
+		let product = model.data.products[i];
 		if (
-			model.data.products[i].category.toLowerCase() ==
-			model.app.currentCategory.toLowerCase()
+			product.category.toLowerCase() == model.app.currentCategory.toLowerCase()
 		) {
 			html += /*html*/ `
       <div style="display:flex; justify-content:center; align-items: center ">
-      <div><image src="${model.data.products[i].image}" style="width:200px"></div>
-      <div><h4>${model.data.products[i].title}</h4> ${model.data.products[i].shortDesc}</div>
-      <div>${model.data.products[i].price},- ink. mva <button>Vis</button></div>
+      <div><image src="${product.image}" style="width:200px"></div>
+      <div><h4>${product.title}</h4> ${product.shortDesc}</div>
+      <div>${product.price},- ink. mva <button onclick='viewProduct(${product.id})'>Vis</button></div>
       </div>
       `;
 		}

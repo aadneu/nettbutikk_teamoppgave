@@ -1,24 +1,40 @@
-const newuser = model.inputs.profile.newuser
-const existingusers = model.data.users
+const newuser = model.inputs.profile.newuser;
+const existingusers = model.data.users;
+let outputNewUser = "";
 
-let nameInput = newuser.name
+const userCreator = (name, password, email, address, zipcode, city, phone) => {
+  return { name, password, email, address, zipcode, city, phone };
+};
 
-
-// {/* <input onchange="model.inputs.profile.newuser.name = this.value" placeholder = 'name'> */}
-
-function updateInput(value) { //kode fra chatgpt
-    nameInput = value;
+function addNewUser() {
+  existingusers.push(
+    userCreator(
+      newuser.name,
+      newuser.password,
+      newuser.email,
+      newuser.address,
+      newuser.zipcode,
+      newuser.city,
+      newuser.phone
+    )
+  );
 }
 
-function createNewUser(){
-    existingusers.push({
-        name: nameInput,
-
-    })
+function createNewUser() {
+  if (newuser.password === newuser.repeatpassword) {
+    let emailexists = false;
+    for (let i = 0; i < existingusers.length; i++) {
+      if (newuser.email === existingusers[i].email) {
+        emailexists = true;
+        break;
+      }
+    }
+    if (!emailexists) {
+      addNewUser();
+      model.app.currentView = "login"
+    } else {
+      outputNewUser = "Denne emailen er allerede i bruk!";
+    }
+  } else { outputNewUser = 'Passordene må være like!'}
+  viewApp();
 }
-
-
-
-
-
-

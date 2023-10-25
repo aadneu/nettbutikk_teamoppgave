@@ -1,5 +1,28 @@
-.profilecenter{
+
+.centercontentprofile {
     display: flex;
     justify-content: center;
-    
+    margin-top: 1%;
+    font-size: xx-large
+}
+
+.profilediv{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'left right';
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.profileheaders{
+    margin-bottom: 3%;
+    font-size: xx-large;
+}
+
+#venstre {
+    grid-area: left;
+    margin-left: 3%;
+}
+#høyre {
+    grid-area: right;
 }

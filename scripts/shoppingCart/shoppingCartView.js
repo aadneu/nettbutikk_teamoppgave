@@ -17,7 +17,7 @@ for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
 <td><image class="cartImage" src= "${items[i].image}"></td>
-<td>${items[i].name}</td>
+<td class="item-name">${items[i].name}</td>
 <td class="description-cell">${items[i].description}</td>
 
 <td><button class="minus" onclick="removeItems(${i})">➖</button> 
@@ -25,7 +25,7 @@ for (let i = 0; i < items.length; i++) {
 <button class ="plus" onclick="addItems(${i})">➕</button>
 </td>
 <td class="pris">${items[i].price} </td> 
-<tr>
+</tr>
 `;
 }
 
@@ -48,6 +48,10 @@ html += /*HTML*/ `
 <tr class="testings">
 <td colspan="4"></td>
 <td colspan="2"><button class="applyDiscountButton" onclick="applyDiscount()"> Bruk rabatt</button></td>
+</tr>
+<tr class="testings">
+<td colspan="4"></td>
+<td colspan="2"><button class="tilKassen">➜</button></td>
 </tr>
 `;
 

@@ -1,22 +1,25 @@
 function newUserView() {
 	let html = /*html*/ `
    <div class='centercontent'>
-        <form id="userForm">
-        <div >Fyll ut:</div>
+        <div>
+        <div >Fyll inn</div>
 
-        <div><input placeholder = 'name'>*</div>
-        <div><input id='newpassword' placeholder = 'Password' type="password">*</div>
-        <div><input id='newrepeatpassword' placeholder = 'Repeat password'type="password">*</div>
-        <div><input id='newemail' placeholder = 'E-mail' type="text">*</div>
-        <div><input placeholder = 'Adress' type="text"></div>
-        <div><input placeholder = 'Zipcode' type="text"></div>
-        <div><input placeholder = 'City' type="text"></div>
-        <div><input placeholder = 'Phone' type="number"></div>
+        <div><input oninput='newuser.name = this.value' placeholder = 'Name' type="text"></div>
+        <div><input oninput='newuser.password = this.value' placeholder = 'Password' type="password"></div>
+        <div><input oninput='newuser.repeatpassword = this.value' placeholder = 'Repeat password'type="password"></div>
+        <div><input oninput='newuser.email = this.value' placeholder = 'E-mail' type="text"></div>
+        <br>
+        <div class='smallerFontSize'> Valgfritt:</div>
+        <div><input oninput='newuser.address = this.value' placeholder = 'Adress' type="text"></div>
+        <div><input oninput='newuser.zipcode = this.value' placeholder = 'Zipcode' type="text"></div>
+        <div><input oninput='newuser.city = this.value' placeholder = 'City' type="text"></div>
+        <div><input oninput='newuser.phone = this.value' placeholder = 'Phone' type="number"></div>
         
-        <div class='smallerFontSize'>* Må fylles ut</div>
+        <div class='smallerFontSize'></div>
+        <div style='color: red' class='smallerFontSize'>${outputNewUser}</div>
 
-        <div><button type="button" onclick="createNewUser()">Lag ny bruker</button></div>
-    </form>
+        <div><button type="button" onclick="createNewUser()">Opprett konto</button></div>
+        </div>
     
     
     </div>

@@ -16,11 +16,14 @@ const model = {
 
 		currentCategory: "",
 
+		currentProduct: "",
+
 		currentView: "main",
 
 		loggedIn: false,
 
-		loggedInAs: ["t2"]
+		currentUser: "",
+		userEditMode: false
 	},
 	salamander: {
 		firfisle: ["firfisle"],
@@ -41,7 +44,7 @@ const model = {
 				password: "",
 				repeatpassword: "",
 				email: "",
-				adress: "",
+				address: "",
 				zipcode: "",
 				city: "",
 				phone: "",
@@ -106,12 +109,8 @@ const model = {
 				name: "admin",
 				password: "t2",
 				email: "t2",
-				address: "Railingstreet 1",
-				zipcode: "420",
-				city: "Åsen",
-				phone: "66666666",
 				customerId: "0",
-				admin: false,
+				admin: true,
 			},
 			{
 				name: "Ben Dover",
@@ -124,9 +123,20 @@ const model = {
 				customerid: "1",
 				admin: false,
 			},
+			{
+				name: "Ådne",
+				password: "å",
+				email: "å",
+				address: "Railingstreet 4",
+				zipcode: "6969",
+				city: "Bryne",
+				phone: "42069420",
+				customerid: "2",
+				admin: false,
+			},
 		],
 
-		categories: ["Mat", "Tilbehør", "Merch"],
+		categories: ["Mat", "Tilbehør", "Merch", "Headset"],
 
 		about: {
 			companyDesc: "",
@@ -176,15 +186,28 @@ const model = {
 			},
 			{
 				title: "Terje T-shirt",
-				id: 421,
-				description: "Spice it up",
+				id: 422,
+				description: "Spice it sideways",
 				shortDesc: "Spice it down and around",
 				price: 7500,
-				stars: 5,
+				stars: 4,
 				image: [
 					"https://getacademy.no/hs-fs/hubfs/12-Sep-12-2023-07-34-46-3774-AM.png?width=940&height=788&name=12-Sep-12-2023-07-34-46-3774-AM.png",
 				],
 				category: "Merch",
+				instock: true,
+			},
+			{
+				title: "Headset",
+				id: 423,
+				description: "Turtle on the beach",
+				shortDesc: "Soundblast",
+				price: 800,
+				stars: 5,
+				image: [
+					"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ15xCGsA71XTxsyrT7h58uq0m9rHPlN9lDjNG9gXlmIywEHy-J2knCuhxQ5kSm8M6vw8v_N8M0I3WX3lzuIWpTeU8MKn6uqLDKH80P5HZZbpkLxr0-9m2HsIl-SUm-fvsfyX1UcA&usqp=CAc",
+				],
+				category: "Headset",
 				instock: true,
 			},
 		],

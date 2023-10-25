@@ -1,19 +1,32 @@
 .container {
   width: inherit;
   height: 20vh;
+  display: flex;
+}
+
+.preview{
+  display: grid;
 }
 
 .preview>img {
   width: 20vh;
 }
 
+.previews {
+  display:flex;
+}
+.previews>div {
+  flex-shrink: 1;
+}
 .container>img {
   /* opacity: 50%; */
   z-index: 2;
+  flex-grow: 1;
+  cursor: pointer;
   /* height: fit-content; */
 }
 
-#leftpic {
+.sidepic {
   opacity: 50%;
   z-index: 1;
 }

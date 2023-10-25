@@ -12,7 +12,9 @@
     border-top: 1px solid grey;
     padding: 8px;
     text-align: left;
+    box-sizing: border-box;
     }
+    
     
     .cartImage {
     width: 90px;
@@ -30,7 +32,7 @@
     } 
     
     input.rabatt {
-    width: 100px;
+    width: 80px;
     height: 20px;
     }
     
@@ -50,6 +52,11 @@
     font-style: italic;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .item-name {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     }
     
     .kasseKlikk {
@@ -87,3 +94,8 @@
     font-size: large;
     }
     
+    .tilKassen {
+    height: 30px;
+    width: 30px;
+    background-color: white; 
+    }

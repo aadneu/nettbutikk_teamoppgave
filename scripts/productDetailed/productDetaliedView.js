@@ -1,45 +1,49 @@
 function productDetailedPageView() {
 	let html = ``;
+
+	let index = model.app.currentProduct;
+	// console.log(index);
 	html = /*HTML*/ `
     <div>
         <div>
-            <div class="title">${model.data.products[0].title}</div>
+            <div class="title">${model.data.products[index].title}</div>
 			<div class="containerDescription">
             	<div class="description">${
-						model.data.products[0].description
-						}. <br>det smaker dejligt</div>
+								model.data.products[index].description
+							}. <br>det smaker dejligt</div>
 			</div>
             <div class="containerDet">
-            	<div class="price">${model.data.products[0].price},- inkl. mva</div>
+            	<div class="price">${model.data.products[index].price},- inkl. mva</div>
             	<button class="shoppingcart" onclick="addToShoppingcart()">Legg til i handlekurv🛒</button>
             	<div class="instock">${displayStockStatus()}</div>
             </div>
             <div class="stars">${displayStars()}</div>
-            <img class="mainPicture" src="${model.data.products[0].image}">
+            <img class="mainPicture" src="${model.data.products[index].image}">
         </div>
     </div>
     `;
 	return html;
 }
 function displayStars() {
-	if (model.data.products[0].stars == 1) {
+	let index = model.app.currentProduct;
+	if (model.data.products[index].stars == 1) {
 		return "<div>★☆☆☆☆</div>";
-	} else if (model.data.products[0].stars == 2) {
+	} else if (model.data.products[index].stars == 2) {
 		return "<div>★★☆☆☆</div>";
-	} else if (model.data.products[0].stars == 3) {
+	} else if (model.data.products[index].stars == 3) {
 		return "<div>★★★☆☆</div>";
-	} else if (model.data.products[0].stars == 4) {
+	} else if (model.data.products[index].stars == 4) {
 		return "<div>★★★★☆</div>";
-	} else if (model.data.products[0].stars == 5) {
+	} else if (model.data.products[index].stars == 5) {
 		return "<div>★★★★★</div>";
 	}
 }
 
 function displayStockStatus() {
-	if (model.data.products[0].instock == true) {
+	let index = model.app.currentProduct;
+	if (model.data.products[index].instock == true) {
 		return "🟢 På lager";
-	} 
-	else{
-		return "🔴 Ikke på lager"
+	} else {
+		return "🔴 Ikke på lager";
 	}
 }
