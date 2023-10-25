@@ -19,15 +19,14 @@ function fetchUserInfo(){
 	return userobject;
 }
 
-function listUserInfo(){
-	let html = `
-	<div>${existingusers[i].name}</div>
-	<div>${existingusers[i].password}</div>
-	<div>${existingusers[i].email}</div>
-	<div>${existingusers[i].address}</div>
-	<div>${existingusers[i].zipcode}</div>
-	<div>${existingusers[i].city}</div>
-	<div>${existingusers[i].phone}</div> 
-	`;
-	return html;
+function showToggleButton(){
+return !model.app.userEditMode
+? `<button onclick='toggleEditMode()'>Endre opplysninger</button>`
+: `<button onclick='toggleEditMode()'>Lagre</button>`
+
+}
+
+function toggleEditMode(){
+	model.app.userEditMode = !model.app.userEditMode
+	viewApp();
 }

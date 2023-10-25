@@ -7,7 +7,7 @@ function profileView() {
             <div id='venstre'>
         <div style='margin-bottom: 6%' class='profileheaders'>Brukeropplysninger</div>
         <div>${fetchUserInfo()}</div>
-        <div><button>Endre opplysninger</button></div>
+        <div>${showToggleButton()}</div>
             </div>
 
             <div id='høyre'>
@@ -19,3 +19,21 @@ function profileView() {
 
 	return html;
 }
+
+function listUserInfo(){
+    return !model.app.userEditMode
+    ? `<div>${existingusers[i].name}</div>
+        <div>${existingusers[i].password}</div>
+        <div>${existingusers[i].email}</div>
+        <div>${existingusers[i].address}</div>
+        <div>${existingusers[i].zipcode}</div>
+        <div>${existingusers[i].city}</div>
+        <div>${existingusers[i].phone}</div>`
+    : `<div> <input placeholder = '${existingusers[i].name}' type="text"></div>  
+        <div><input placeholder="${existingusers[i].password}" type="text"></div>
+        <div><input placeholder="${existingusers[i].email}" type="text"></div>
+        <div><input placeholder="${existingusers[i].address}" type="text"></div>
+        <div><input placeholder="${existingusers[i].zipcode}" type="number"></div>
+        <div><input placeholder="${existingusers[i].city}" type="text"></div>
+        <div><input placeholder="${existingusers[i].phone}" type="text"></div>`;
+    }

@@ -23,6 +23,7 @@ const model = {
 		loggedIn: false,
 
 		currentUser: "",
+		userEditMode: false
 	},
 	salamander: {
 		firfisle: ["firfisle"],
