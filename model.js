@@ -135,7 +135,7 @@ const model = {
 			},
 		],
 
-		categories: ["Mat", "Tilbehør", "Merch"],
+		categories: ["Mat", "Tilbehør", "Merch", "Headset"],
 
 		about: {
 			companyDesc: "",
@@ -189,11 +189,24 @@ const model = {
 				description: "Spice it up",
 				shortDesc: "Spice it down and around",
 				price: 7500,
-				stars: 5,
+				stars: 4,
 				image: [
 					"https://getacademy.no/hs-fs/hubfs/12-Sep-12-2023-07-34-46-3774-AM.png?width=940&height=788&name=12-Sep-12-2023-07-34-46-3774-AM.png",
 				],
 				category: "Merch",
+				instock: true,
+			},
+			{
+				title: "Headset",
+				id: 423,
+				description: "Turtle on the beach",
+				shortDesc: "Soundblast",
+				price: 800,
+				stars: 5,
+				image: [
+					"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ15xCGsA71XTxsyrT7h58uq0m9rHPlN9lDjNG9gXlmIywEHy-J2knCuhxQ5kSm8M6vw8v_N8M0I3WX3lzuIWpTeU8MKn6uqLDKH80P5HZZbpkLxr0-9m2HsIl-SUm-fvsfyX1UcA&usqp=CAc",
+				],
+				category: "Headset",
 				instock: true,
 			},
 		],
