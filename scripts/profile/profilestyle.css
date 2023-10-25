@@ -26,3 +26,13 @@
 #høyre {
     grid-area: right;
 }
+
+.profileEditDiv > input{
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.profileEditDiv > div{
+    font-size: large;
+}
