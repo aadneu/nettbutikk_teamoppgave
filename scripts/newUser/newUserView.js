@@ -13,7 +13,7 @@ function newUserView() {
         <div><input oninput='newuser.address = this.value' placeholder = 'Adress' type="text"></div>
         <div><input oninput='newuser.zipcode = this.value' placeholder = 'Zipcode' type="text"></div>
         <div><input oninput='newuser.city = this.value' placeholder = 'City' type="text"></div>
-        <div><input oninput='newuser.phone = this.value' placeholder = 'Phone' type="number"></div>
+        <div><input oninput='newuser.phone = this.value' placeholder = 'Phone' type="text"></div>
         
         <div class='smallerFontSize'></div>
         <div style='color: red' class='smallerFontSize'>${outputNewUser}</div>
