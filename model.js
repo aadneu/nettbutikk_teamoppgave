@@ -16,11 +16,13 @@ const model = {
 
 		currentCategory: "",
 
+		currentProduct: "",
+
 		currentView: "main",
 
 		loggedIn: false,
 
-		currentUser: ""
+		currentUser: "",
 	},
 	salamander: {
 		firfisle: ["firfisle"],
@@ -172,7 +174,7 @@ const model = {
 			},
 			{
 				title: "Terje T-shirt",
-				id: 421,
+				id: 422,
 				description: "Spice it up",
 				shortDesc: "Spice it down and around",
 				price: 7500,
