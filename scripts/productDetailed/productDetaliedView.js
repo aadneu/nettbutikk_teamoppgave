@@ -11,7 +11,7 @@ function productDetailedPageView() {
 			</div>
             <div class="containerDet">
             	<div class="price">${model.data.products[0].price},- inkl. mva</div>
-            	<button class="shoppingcart">Legg til i handlekurv🛒</button>
+            	<button class="shoppingcart" onclick="addToShoppingcart()">Legg til i handlekurv🛒</button>
             	<div class="instock">${displayStockStatus()}</div>
             </div>
             <div class="stars">${displayStars()}</div>
