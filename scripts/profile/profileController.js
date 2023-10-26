@@ -18,6 +18,7 @@ return !model.app.userEditMode
 	<button onclick='saveUserChanges()'>Lagre</button>`
 }
 
+
 function toggleEditMode(){
 	model.app.userEditMode = !model.app.userEditMode
 	viewApp();
@@ -27,20 +28,18 @@ function saveUserChanges(){
 	const existingusers = model.data.users
 	for(i = 0; i < existingusers.length; i++){
 		if(model.app.currentUser === existingusers[i].name){
-	existingusers[i](
-		  userCreator(
-			newuser.name,
-			newuser.password,
-			newuser.email,
-			newuser.address,
-			newuser.zipcode,
-			newuser.city,
-			newuser.phone
-		  )
-		)
-		viewApp();
+			existingusers[i].name = newuser.name
+			existingusers[i].password = newuser.password
+			existingusers[i].email = newuser.email
+			existingusers[i].address = newuser.address 
+			existingusers[i].zipcode = newuser.zipcode
+			existingusers[i].city = newuser.city
+			existingusers[i].phone = newuser.phone 
 	  }
 	}
+	model.app.currentUser = newuser.name
+	toggleEditMode();
+	viewApp();
 }
 	
 	
