@@ -19,6 +19,8 @@ function newUserView() {
         <div style='color: red' class='smallerFontSize'>${outputNewUser}</div>
 
         <div><button type="button" onclick="createNewUser()">Opprett konto</button></div>
+        <br>
+      
         </div>
     
     

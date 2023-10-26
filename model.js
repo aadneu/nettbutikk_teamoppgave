@@ -48,6 +48,7 @@ const model = {
 				zipcode: "",
 				city: "",
 				phone: "",
+				customerid: "",
 			},
 		},
 
@@ -109,7 +110,7 @@ const model = {
 				name: "admin",
 				password: "t2",
 				email: "t2",
-				customerId: "0",
+				customerid: "0",
 				admin: true,
 			},
 			{

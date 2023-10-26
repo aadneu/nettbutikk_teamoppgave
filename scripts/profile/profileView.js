@@ -5,11 +5,11 @@ function profileView() {
                 
     <div class='profilediv'>
             <div id='venstre'>
-        <div style='margin-bottom: 6%' class='profileheaders'>Brukeropplysninger</div>
-        <div>${fetchUserInfo()}</div>
-        <div>${showToggleButton()}</div>
+        
             </div>
-
+            <div id='midten'><div style='margin-bottom: 6%' class='profileheaders'>Brukeropplysninger</div>
+        <div>${fetchUserInfo()}</div>
+        <div>${showToggleButton()}</div></div>
             <div id='høyre'>
         <div class='profileheaders'>Mine ordrer:</div>
         <div>${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}</div>

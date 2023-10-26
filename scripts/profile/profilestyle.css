@@ -8,20 +8,21 @@
 
 .profilediv{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.5fr 1fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 'left right';
+    grid-template-areas: 'left middle right';
     margin-top: 3%;
     margin-left: 3%;
 }
 .profileheaders{
     margin-bottom: 3%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
-#venstre {
-    grid-area: left;
+#midten {
+    grid-area: middle;
     margin-left: 3%;
+    
 }
 #høyre {
     grid-area: right;

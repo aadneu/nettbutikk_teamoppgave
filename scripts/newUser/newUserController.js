@@ -2,8 +2,8 @@ const newuser = model.inputs.profile.newuser;
 const existingusers = model.data.users;
 let outputNewUser = "";
 
-const userCreator = (name, password, email, address, zipcode, city, phone) => {
-  return { name, password, email, address, zipcode, city, phone };
+const userCreator = ( name,  password,  email,  address,  zipcode,  city,  phone,  customerid) => {
+  return { name, password, email, address, zipcode, city, phone, customerid };
 };
 
 function addNewUser() {
@@ -15,7 +15,8 @@ function addNewUser() {
       newuser.address,
       newuser.zipcode,
       newuser.city,
-      newuser.phone
+      newuser.phone,
+      newuser.customerid
     )
   );
 }
@@ -31,10 +32,22 @@ function createNewUser() {
     }
     if (!emailexists) {
       addNewUser();
-      model.app.currentView = "login"
+      model.app.currentView = "login";
     } else {
       outputNewUser = "Denne emailen er allerede i bruk!";
     }
-  } else { outputNewUser = 'Passordene må være like!'}
+  } else {
+    outputNewUser = "Passordene må være like!";
+  }
+
   viewApp();
 }
+
+// function customeridFunction() {
+//   for (i = 0; 0 < existingusers.length; i++) {
+//     if (existingusers[i].customerid >= existingusers[2].customerid) {
+//       existingusers[i].customerid = existingusers[i].customerid++;
+//     }
+//   }
+//   return;
+// }
