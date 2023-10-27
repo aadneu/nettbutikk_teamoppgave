@@ -23,18 +23,18 @@ function addNewUser() {
 
 function createNewUser() {
   if (newuser.password === newuser.repeatpassword) {
-    let emailexists = false;
+    let infoexists = false;
     for (let i = 0; i < existingusers.length; i++) {
-      if (newuser.email === existingusers[i].email) {
-        emailexists = true;
+      if (newuser.email === existingusers[i].email && newuser.name === existingusers[i].name) {
+        infoexists = true;
         break;
       }
     }
-    if (!emailexists) {
+    if (infoexists) {
       addNewUser();
       model.app.currentView = "login";
     } else {
-      outputNewUser = "Denne emailen er allerede i bruk!";
+      outputNewUser = "Email eller brukernavn er allerede i bruk!";
     }
   } else {
     outputNewUser = "Passordene må være like!";
