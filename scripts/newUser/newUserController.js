@@ -25,12 +25,12 @@ function createNewUser() {
   if (newuser.password === newuser.repeatpassword) {
     let infoexists = false;
     for (let i = 0; i < existingusers.length; i++) {
-      if (newuser.email === existingusers[i].email && newuser.name === existingusers[i].name) {
+      if (newuser.email === existingusers[i].email || newuser.name === existingusers[i].name) {
         infoexists = true;
         break;
       }
     }
-    if (infoexists) {
+    if (!infoexists) {
       addNewUser();
       model.app.currentView = "login";
     } else {
