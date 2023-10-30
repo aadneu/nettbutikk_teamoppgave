@@ -16,14 +16,14 @@ const model = {
 
 		currentCategory: "",
 
-		currentProduct: "",
+		currentProduct: "0",
 
-		currentView: "main",
+		currentView: "productDetailed",
 
 		loggedIn: false,
 
 		currentUser: "",
-		userEditMode: false
+		userEditMode: false,
 	},
 	salamander: {
 		firfisle: ["firfisle"],

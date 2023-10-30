@@ -4,22 +4,24 @@ function productDetailedPageView() {
 	let index = model.app.currentProduct;
 	// console.log(index);
 	html = /*HTML*/ `
-    <div>
-        <div>
+    <div id='productDetailedGrid'>
+        
             <div class="title">${model.data.products[index].title}</div>
-			<div class="containerDescription">
-            	<div class="description">${
-								model.data.products[index].description
-							}. <br>det smaker dejligt</div>
+			
+            <div class="description">${model.data.products[index].description}.</div>
+			
+            <div class='price'>
+            	<div>${model.data.products[index].price},- inkl. mva</div>
+				<button class="shoppingcart" onclick="addToShoppingcart()">Legg til i handlekurv🛒</button>
+				<div class="instock">${displayStockStatus()}</div>
+						
 			</div>
-            <div class="containerDet">
-            	<div class="price">${model.data.products[index].price},- inkl. mva</div>
-            	<button class="shoppingcart" onclick="addToShoppingcart()">Legg til i handlekurv🛒</button>
-            	<div class="instock">${displayStockStatus()}</div>
-            </div>
+            
+            
+            
             <div class="stars">${displayStars()}</div>
-            <img class="mainPicture" src="${model.data.products[index].image}">
-        </div>
+            <img id="mainPicture" src="${model.data.products[index].image}">
+        
     </div>
     `;
 	return html;

@@ -20,24 +20,26 @@ function viewApp() {
 }
 
 function pageView() {
+	let currentView = model.app.currentView;
 	let html = ``;
-	if (model.app.currentView == "about") {
-		html += aboutView();
-	} else if (model.app.currentView == "main") {
+
+	if (currentView == "main") {
 		html += mainView();
-	} else if (model.app.currentView == "profile") {
+	} else if (currentView == "about") {
+		html += aboutView();
+	} else if (currentView == "profile") {
 		html += profileView();
-	} else if (model.app.currentView == "productDetailed") {
+	} else if (currentView == "productDetailed") {
 		html += productDetailedPageView();
-	} else if (model.app.currentView == "productList") {
+	} else if (currentView == "productList") {
 		html += productListView();
-	} else if (model.app.currentView == "login") {
+	} else if (currentView == "login") {
 		html += loginView();
-	} else if (model.app.currentView == "shoppingCart") {
+	} else if (currentView == "shoppingCart") {
 		html += shoppingCartView();
-	} else if (model.app.currentView == "newuser") {
+	} else if (currentView == "newuser") {
 		html += newUserView();
-	} else if (model.app.currentView == "category") {
+	} else if (currentView == "category") {
 		html += categoryView();
 	}
 	return html;
@@ -56,7 +58,7 @@ function createHeaderHTML() {
 
 function logOut() {
 	model.app.loggedIn = false;
-	model.app.currentUser = ''
+	model.app.currentUser = "";
 	if ((model.app.currentView = "profile")) {
 		model.app.currentView = "main";
 	}
