@@ -2,17 +2,18 @@ function productDetailedPageView() {
 	let html = ``;
 
 	let index = model.app.currentProduct;
+	let product = model.data.products[index];
 	// console.log(index);
 	html = /*HTML*/ `
     <div id='productDetailedGrid'>
         
-            <div class="title">${model.data.products[index].title}</div>
+            <div class="title">${product.title}</div>
 			
-            <div class="description">${model.data.products[index].description}.</div>
+            <div class="description">${product.description}.</div>
 			
             <div class='price'>
-            	<div>${model.data.products[index].price},- inkl. mva</div>
-				<button class="shoppingcart" onclick="addToShoppingcart()">Legg til i handlekurv🛒</button>
+            	<div>${product.price},- inkl. mva</div>
+				<button class="shoppingcart" onclick="addToShoppingcart(${index})">Legg til i handlekurv🛒</button>
 				<div class="instock">${displayStockStatus()}</div>
 						
 			</div>
@@ -20,7 +21,7 @@ function productDetailedPageView() {
             
             
             <div class="stars">${displayStars()}</div>
-            <img id="mainPicture" src="${model.data.products[index].image}">
+            <img id="mainPicture" src="${product.image}">
         
     </div>
     `;
@@ -28,15 +29,17 @@ function productDetailedPageView() {
 }
 function displayStars() {
 	let index = model.app.currentProduct;
-	if (model.data.products[index].stars == 1) {
+	let product = model.data.products[index];
+
+	if (product.stars == 1) {
 		return "<div>★☆☆☆☆</div>";
-	} else if (model.data.products[index].stars == 2) {
+	} else if (product.stars == 2) {
 		return "<div>★★☆☆☆</div>";
-	} else if (model.data.products[index].stars == 3) {
+	} else if (product.stars == 3) {
 		return "<div>★★★☆☆</div>";
-	} else if (model.data.products[index].stars == 4) {
+	} else if (product.stars == 4) {
 		return "<div>★★★★☆</div>";
-	} else if (model.data.products[index].stars == 5) {
+	} else if (product.stars == 5) {
 		return "<div>★★★★★</div>";
 	}
 }

@@ -12,7 +12,10 @@ function productListView() {
       <div style="display:flex; justify-content:center; align-items: center ">
       <div><image src="${product.image}" style="width:200px"></div>
       <div><h4>${product.title}</h4> ${product.shortDesc}</div>
-      <div>${product.price},- ink. mva <button onclick='viewProduct(${product.id})'>Vis</button></div>
+      <div>${product.price},- ink. mva 
+			<button onclick='viewProduct(${product.id})'>Vis</button>
+			<button onclick='addToShoppingcart(${i})'>Legg til I handlevogn</button>
+			</div>
       </div>
       `;
 		}

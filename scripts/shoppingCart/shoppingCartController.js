@@ -18,14 +18,15 @@ updateSum();
 }
 
 function updateSum() {
-let totalSum = 0;
+let newTotalSum = 0;
 let items = model.inputs.shoppingCart.items;
 
 for (let i = 0; i < items.length; i++) {
-totalSum += items[i].count * items[i].price;
+newTotalSum += items[i].count * items[i].price;
 }
-let totalSumElement = document.getElementById('total-sum');
-totalSumElement.textContent = `${totalSum.toFixed(2)} kr`;
+
+model.inputs.shoppingCart.total = newTotalSum;
+viewApp();
 
 }
 

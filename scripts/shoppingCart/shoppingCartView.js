@@ -17,7 +17,7 @@ for (let i = 0; i < items.length; i++) {
 		html += /*HTML*/ `  
 <tr>
 <td><image class="cartImage" src= "${items[i].image}"></td>
-<td class="item-name">${items[i].name}</td>
+<td class="item-title">${items[i].title}</td>
 <td class="description-cell">${items[i].description}</td>
 
 <td><button class="minus" onclick="removeItems(${i})">➖</button> 
@@ -38,7 +38,7 @@ html += /*HTML*/ `
 <tr class="testings">
     <td colspan="3"></td>
     <td>Totalt:</td>
-    <td id="total-sum">0.00 kr</td>
+    <td>${model.inputs.shoppingCart.total} kr</td>
 </tr>
 <tr class="testings">
     <td colspan="3"></td>
@@ -55,5 +55,6 @@ html += /*HTML*/ `
 	html += /*HTML*/ `
 </table>
 `;
+
 	return html;
 }
