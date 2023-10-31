@@ -3,7 +3,6 @@ function newUserView() {
    <div class='centercontent'>
         <div>
         <div >Fyll inn</div>
-
         <div><input oninput='newuser.name = this.value' placeholder = 'Name' type="text"></div>
         <div><input oninput='newuser.password = this.value' placeholder = 'Password' type="password"></div>
         <div><input oninput='newuser.repeatpassword = this.value' placeholder = 'Repeat password'type="password"></div>
@@ -14,16 +13,11 @@ function newUserView() {
         <div><input oninput='newuser.zipcode = this.value' placeholder = 'Zipcode' type="text"></div>
         <div><input oninput='newuser.city = this.value' placeholder = 'City' type="text"></div>
         <div><input oninput='newuser.phone = this.value' placeholder = 'Phone' type="text"></div>
-        
         <div class='smallerFontSize'></div>
         <div style='color: red' class='smallerFontSize'>${outputNewUser}</div>
-
         <div><button type="button" onclick="createNewUser()">Opprett konto</button></div>
         <br>
-      
         </div>
-    
-    
     </div>
     `;
 	return html;

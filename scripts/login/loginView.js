@@ -1,7 +1,6 @@
 function loginView() {
 	let html = /*html*/ `
     <div class='centercontent'>
-        
         <div>
         <div>Innloggingsside</div>
         <br>
@@ -14,7 +13,6 @@ function loginView() {
         <div class='smallerFontSize'>Husk meg: <input type="checkbox"></div>
         
         <div>
-            
             <button onclick='loginButton()'>Login</button>
             <button onclick='changeView("newuser")'>Registrer ny bruker</button>
         </div>
