@@ -35,20 +35,17 @@ html += /*HTML*/ `
     <td><u onclick="emptyAll()">Tøm handlevogn</u></td>
 </tr>
 
-<tr class="testings">
-    <td colspan="3"></td>
-    <td>Totalt:</td>
-    <td>${model.inputs.shoppingCart.total} kr</td>
-</tr>
+${showNewPrice()}
+
 <tr class="testings">
     <td colspan="3"></td>
     <td>Rabattkode:</td>
-    <td><input class="rabatt" type="text" id="rabattkode" placeholder="Aalto23"></td>
+    <td><input onchange='model.inputs.shoppingCart.rabattkode = this.value, updateSum()' class="rabatt" type="text"></td>
 </tr>
 
 <tr class="testings">
 <td colspan="4"></td>
-<td colspan="2"><button class="tilKassen">➜</button></td>
+<td colspan="2"><button class="tilKassen">Til kassen</button></td>
 </tr>
 `;
 
@@ -58,3 +55,28 @@ html += /*HTML*/ `
 
 	return html;
 }
+
+function showNewPrice() {
+if (model.inputs.shoppingCart.rabattkode == model.data.shoppingCart.gyldigRabattkode){
+    return /*HTML*/`
+    <tr class="testings">
+        <td colspan="3"></td>
+        <td>Totalt:</td>
+        <td>${model.inputs.shoppingCart.total * 10/((100-model.data.shoppingCart.rabattProsent)/10)} kr</td>
+    </tr>
+
+    <tr class="testings">
+        <td colspan="3"></td>
+        <td>Ny pris: (-${model.data.shoppingCart.rabattProsent}%)</td>
+        <td>${model.inputs.shoppingCart.total} kr</td>
+    </tr>
+    `} else {
+        return /*HTML*/`
+        <tr class="testings">
+            <td colspan="3"></td>
+            <td>Totalt:</td>
+        <td>${model.inputs.shoppingCart.total} kr</td>
+    </tr>
+    `}
+}
+

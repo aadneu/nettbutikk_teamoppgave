@@ -25,6 +25,10 @@ for (let i = 0; i < items.length; i++) {
 newTotalSum += items[i].count * items[i].price;
 }
 
+if (model.inputs.shoppingCart.rabattkode == model.data.shoppingCart.gyldigRabattkode) {
+    newTotalSum = newTotalSum * (100 - model.data.shoppingCart.rabattProsent)/100
+}
+
 model.inputs.shoppingCart.total = newTotalSum;
 viewApp();
 
@@ -32,19 +36,7 @@ viewApp();
 
 function emptyAll() {
 let items = model.inputs.shoppingCart.items;
-for (let i = 0; i < items.length; i++) {
-items[i].count = 0;    //La total sum gå til 0 igjen.
-
-let inputField = document.getElementById(`count-${i}`);
-inputField.value = 0;  //Få inputfeltene med antall varer til å nullstille seg også.
-}
+items.splice(0, items.length);
+model.inputs.shoppingCart.rabattkode = '';
 updateSum();
 }
-
-function discount() {
-let rabattkodeInput = document.getElementById('rabattkode');
-let rabattkode = rabattkodeInput.value;
-
-}
-
-//Her kommer funksjonen til knapper

@@ -17,3 +17,23 @@ function getProductById(id) {
 	}
 	return null;
 }
+
+
+function searchFunction(){
+	let inputword =  model.inputs.search.toLowerCase()
+	let results = [];
+	for(let i = 0; i < model.data.products.length; i++){
+		if(model.data.products[i].title.toLowerCase().includes(inputword)){
+			results.push(model.data.products[i])
+		}
+	}
+	return results
+}
+
+//  function createSearchResultList(){
+// 	let showSearchResult;
+// 	for(let i = 0; i < results.length; i++){
+// 		showSearchResult += results[i]
+// 	}
+// 	return showSearchResult
+//  }

@@ -2,71 +2,72 @@
     overflow: hidden;
 } */
 
+#w74 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .boxes {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .boxes2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .overskrift {
-    background-color: olive;
-    font-size: xx-large;
-    font-weight: 900;
-    color: black;
-    border: 2px solid black;
-    width: 50vw;
-    width: 140px;
-    text-align: center;
-    margin: 1px;
-    padding: 0px;
-    height: 40px;
-
+  background-color: olive;
+  font-size: xx-large;
+  font-weight: 900;
+  color: black;
+  border: 2px solid black;
+  width: 50vw;
+  width: 140px;
+  text-align: center;
+  margin: 1px;
+  padding: 0px;
+  height: 40px;
 }
 .box1 {
-    border: 2px solid black;
-    width: 50vw;
-    height: 50px;
-    position: absolute;
-    top: 46px;
-
+  border: 2px solid black;
+  width: 50vw;
+  height: 50px;
+  position: absolute;
+  top: 46px;
 }
 .box2 {
-    border: 2px solid black;
-    width: 50vw;
-    height: 100px;
-    top: 100px;
-    position: absolute;
+  border: 2px solid black;
+  width: 50vw;
+  height: 100px;
+  top: 100px;
+  position: absolute;
 }
 .box3 {
-    border: 2px solid black;
-    width: 50vw;
-    height: 50px;
-    top: 210px;
-    position: absolute;
+  border: 2px solid black;
+  width: 50vw;
+  height: 50px;
+  top: 210px;
+  position: absolute;
 }
 .box4 {
-    border: 2px solid black;
-    width: 50vw;
-    height: 100px;
-    top: 260px;
-    position: absolute;
+  border: 2px solid black;
+  width: 50vw;
+  height: 100px;
+  top: 260px;
+  position: absolute;
 }
 .box5 {
-    border: 2px solid black;
-    width: 50vw;
-    height: 80px;
-    top: 385px;
-    position: absolute;
-
+  border: 2px solid black;
+  width: 50vw;
+  height: 80px;
+  top: 385px;
+  position: absolute;
 }
 .box7 {
-    border: 3px solid black;
-    width: 51vw;
-    height: 47.5vh;
-    top: 0px;
-    position: sticky;
+  border: 3px solid black;
+  width: 51vw;
+  height: 47.5vh;
+  top: 0px;
+  position: sticky;
 }

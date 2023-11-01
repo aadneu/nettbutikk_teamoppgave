@@ -48,9 +48,9 @@ function pageView() {
 function createHeaderHTML() {
 	return /*HTML*/ `
     <image id='logo' src='${model.data.logo}' onclick="changeView('main')">
-    <input id='search' type='text' placeholder='Søk'>
-    <button onclick="">🔍</button>
-    <button onclick="changeView('shoppingCart')">*shoppingcart icon*</button>
+    <div><input oninput='model.inputs.search = this.value, showSearchResults(searchFunction())' onchange='viewApp()' type='text' placeholder='Søk'>${showSearchResults(searchFunction())}</div>
+    <button onclick="viewApp()">🔍</button>
+    <button onclick="changeView('shoppingCart')">🛒${shoppingCartCounter()}</button>
     ${isLoggedInButton()}
      <br>
   `;
@@ -72,4 +72,23 @@ function isLoggedInButton() {
 		: `<button onclick="changeView('newuser')">*Registrer icon*</button>
         <button onclick="changeView('login')">*Login Icon*</button>
         `;
+}
+
+function shoppingCartCounter(){
+	let counter = 0
+
+	for(let i = 0; i<model.inputs.shoppingCart.items.length; i++){
+		counter += model.inputs.shoppingCart.items[i].count
+	}
+	return counter;
+}
+
+function showSearchResults(arrayOfObject){
+	let html = ''
+
+	for(let i = 0; i < arrayOfObject.length; i++) {
+		html += `<div onclick='viewProduct(${arrayOfObject[i].id})'>${arrayOfObject[i].title}</div>`
+	}
+
+	return html;
 }

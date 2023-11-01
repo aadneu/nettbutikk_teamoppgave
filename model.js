@@ -18,7 +18,7 @@ const model = {
 
 		currentProduct: "0",
 
-		currentView: "productDetailed",
+		currentView: "main",
 
 		loggedIn: false,
 
@@ -116,7 +116,7 @@ const model = {
 
 		shoppingCart: {
 			gyldigRabattkode: "Aalto23",
-			rabattProsent: 10,
+			rabattProsent: 30,
 			items: [],
 		},
 
@@ -175,7 +175,7 @@ const model = {
 			{
 				title: "Skumle porselensdukker",
 				id: 424,
-				description: "Veldig skummel dukker som er faktisk litt skumlere enn chucky, men bare litt",
+				description: "Veldig skummle dukker som er faktisk litt skumlere enn chucky, men bare litt",
 				shortDesc: "Skummelere en Chucky, men bare litt:P",
 				price: 666,
 				stars: 4,
@@ -226,8 +226,8 @@ const model = {
 			{
 				title: "Elektrisk tannbørste for gule tenner",
 				id: 428,
-				description: "Denne tannbørsten som har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
-				shortDesc: "Denne tannbørsten som har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
+				description: "Denne tannbørsten har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
+				shortDesc: "Denne tannbørsten har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
 				price: 1800,
 				stars: 1,
 				image: [
@@ -270,6 +270,19 @@ const model = {
 				stars: 1,
 				image: [
 					"https://scontent.fosl1-1.fna.fbcdn.net/v/t1.6435-9/107379775_10158379498222674_8965159078479330885_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3ba11c&_nc_ohc=jLO9I_YYbLoAX_EcvCl&_nc_ht=scontent.fosl1-1.fna&oh=00_AfDItS7Lefm5qV2MmdSHtX6lWKEHSDlHxcmOC4noqtJ5jg&oe=65688FAA",
+				],
+				category: "Diverse",
+				instock: true,
+			},
+			{
+				title: "Naruto - Komplett DVD-boks",
+				id: 432,
+				description: 'Naruto er en av de mest ikoniske og elskede anime-seriene gjennom tidene, og nå kan du eie hele eventyret samlet i denne imponerende Naruto DVD-boksen. Denne samleboksen gir deg tilgang til hele Naruto-serien fra begynnelse til slutt, inkludert både Naruto og Naruto Shippuden, totalt over 700 episoder av spennende eventyr. Egenskaper: Inneholder hele Naruto-serien, inkludert Naruto og Naruto Shippuden. DVD-format med høy bilde- og lydkvalitet. Undertekster på flere språk for internasjonal tilgjengelighet.Flerfoldige DVD-er satt i en praktisk oppbevaringsboks.',
+				shortDesc: '',
+				price: 1999,
+				stars: 4,
+				image: [
+					"https://i.ebayimg.com/images/g/tz4AAOSwanRhVCge/s-l1600.jpg",
 				],
 				category: "Diverse",
 				instock: true,
