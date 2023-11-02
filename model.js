@@ -287,6 +287,19 @@ const model = {
 				category: "Diverse",
 				instock: true,
 			},
+			{
+				title: "Aalto's Purr-fect Cat-Eye Shades",
+				id: 433,
+				description: 'Endelig kan din pelskledde venn føle seg som en Hollywood-superstjerne hver gang de trasker rundt på sine kattevandringer. De herlige kattesolbrillene fra "Alt fra Aalto" er det ultimate tilbehøret for katter som setter pris på en sunn dose glamour i hverdagen. Enten de flanerer ned en imaginær kattekatwalk i stua eller bare slapper av i bakgården, vil disse solbrillene sette en ny standard for kattestil og få alle andre katter i nabolaget til å misunne din firbente bestevenn. ',
+				shortDesc: 'Gi din firbente bestevenn en dose stjerneglans med Aaltos Purr-fect Cat-Eye Shades fra "Alt fra Aalto"',
+				price: 350,
+				stars: 4,
+				image: [
+					"https://arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/CIITKIIHM5HTPBPVT6ACJ5IWMM.jpg",
+				],
+				category: "Merch",
+				instock: true,
+			},
 		],
 
 		logo: "images/logo.PNG",
