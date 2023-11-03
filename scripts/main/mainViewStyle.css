@@ -7,6 +7,8 @@
 .preview{
   display: grid;
   grid-template-columns: 20vh;
+  font-size: 80%;
+  margin: 2%;
 }
 
 .preview>img {

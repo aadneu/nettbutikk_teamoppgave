@@ -9,14 +9,19 @@ function productListView() {
 			product.category.toLowerCase() == model.app.currentCategory.toLowerCase()
 		) {
 			html += /*html*/ `
-      <div style="display:flex; justify-content:center; align-items: center ">
-      <div><image src="${product.image}" style="width:200px"></div>
-      <div><h4>${product.title}</h4> ${product.shortDesc}</div>
-      <div>${product.price},- ink. mva 
-			<button onclick='viewProduct(${product.id})'>Vis</button>
-			<button onclick='addToShoppingcart(${i})'>Legg til I handlevogn</button>
-			</div>
-      </div>
+				<div class='listItem'>
+					<div class='listTitle'>${product.title}</div>
+					<div class='listImage'><image src="${product.image}" style="width:200px"></div>
+					<div class='listDescription'>${product.description}</div>
+					<div class='listPrice'>${product.price},- ink. mva 
+							<div>
+								<button onclick='viewProduct(${product.id})'>Vis</button>
+								<button onclick='addToShoppingcart(${i})'>+🛒</button>
+							</div>
+							
+					</div>
+					<div>${displayStars(product)}</div>
+				</div>
       `;
 		}
 	}

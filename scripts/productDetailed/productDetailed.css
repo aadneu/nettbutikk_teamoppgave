@@ -5,7 +5,7 @@
 } */
 #productDetailedGrid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr;
     grid-template-areas:
         ' title title'
@@ -29,7 +29,7 @@
 
 .description {
     grid-area: description;
-    font-size: 100%;
+    font-size: 80%;
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -37,6 +37,7 @@
 #mainPicture {
     grid-area: image;
     height: 40vh;
+    max-width: fit-content;
 }
 
 .price {

@@ -14,11 +14,11 @@ const model = {
 
 		carousel: 0,
 
-		currentCategory: "",
+		currentCategory: "Diverse",
 
 		currentProduct: "0",
 
-		currentView: "main",
+		currentView: "productList",
 
 		loggedIn: false,
 
@@ -124,20 +124,20 @@ const model = {
 			{
 				title: "Ekte farse fra Jæren",
 				id: 420,
-				description: "Eksklusivt farse dinner-kit, limited edition!",
-				shortDesc: "Lag mat til hele familien",
+				description: "Lag deilige måltider med en vri av humor. Med morsomme oppskrifter, kreative ingredienser og en vitsedelingskonkurranse, blir middagen din til en latterfull opplevelse. Dette kitet er perfekt for familie- og vennemiddager, og det vil garantert sette en humoristisk tone for enhver anledning.	I tillegg er dette kitet en flott gaveidé for matentusiaster og humorfans. Gi dine kjære en unik gave som kombinerer kulinarisk nytelse med morsomme stunder rundt bordet. Oppdag gleden av å lage mat med latter, og bestill Komiske Kjøkken Farse Dinner Kit i dag for å skape minnerike måltider og smittende latter!",
+				shortDesc: "Utforsk de autentiske smakene fra den vakre Jæren-regionen i Norge med vårt nøye sammensatte dinner kit. Vi har håndplukket de ferskeste ingrediensene fra Jæren, kjent for sin rike matkultur og naturskjønnhet, og satt sammen en deilig middagspakke for deg å lage hjemme.",
 				price: 150,
 				stars: 5,
 				image: [
-					"https://ams3.digitaloceanspaces.com/rsposres/Article_Images/DBE456D22724910EE0530A01000A8647.gif"],
+					"https://image.spreadshirtmedia.net/image-server/v1/compositions/T141A1PA6264PT17X26Y0D305392252W19738H29794/views/1,width=500,height=500,backgroundColor=ffffff,noPt=true/farsetilbehoer-kokkeforkle.jpg"],
 				category: "Mat",
 				instock: true,
 			},
 			{
 				title: "Hatter til Katter",
 				id: 421,
-				description: "Alle katters store drøm, en egen hatt!",
-				shortDesc: "Spice it down",
+				description: "Gjør din firbente venn til den mest stilsikre katten i nabolaget med vårt utvalg av eksklusive hatter til katter! Våre hatter er designet spesielt for katter som elsker å uttrykke sin unike personlighet og skille seg ut fra mengden. Uansett om din katt er en eventyrer, en diva eller bare elsker å være midtpunktet, har vi den perfekte hatten for enhver smak.",
+				shortDesc: "Katter med Hatter – Fordi selv katter trenger en stiloppgradering! Gjør din katt til den mest elegant kledde i nabolaget med vårt utvalg av trendy hatter.",
 				price: 300,
 				stars: 5,
 				image: [
@@ -149,8 +149,8 @@ const model = {
 			{
 				title: "Terje T-shirt",
 				id: 422,
-				description: "T-skjorte brukt av Terje, LIMITED EDITION!",
-				shortDesc: "Spice it down and around",
+				description: "Introduserer vår Terje T-skjorte – en unik LIMITED EDITION kolleksjon som hyller stilen og lidenskapen til den ikoniske Terje, en personlighet som skiller seg ut fra mengden. Denne T-skjorten er ikke bare et plagg; det er en livsstil, en påminnelse om dristighet, individualitet og autentisitet.",
+				shortDesc: "Vår Terje T-skjorte - En LIMITED EDITION kolleksjon som feirer den unike stilen og lidenskapen til den ikoniske Terje. Den er mer enn bare klær; den representerer dristighet, individualitet og autentisitet.",
 				price: 7500,
 				stars: 4,
 				image: [
@@ -162,8 +162,8 @@ const model = {
 			{
 				title: "Headset",
 				id: 423,
-				description: "Turtle on the beach",
-				shortDesc: "Soundblast",
+				description: "Velkommen til Musikkens Mesterklasse, der vårt headset tar på seg rollen som den ultimate professor! Dette er ikke bare et headset; det er din personlige guide til lydverdenens mest overdådige konserter, de mest episke basslinjene og de høyeste tonene som kun hunder kan høre. Med vårt headset, vil du føle deg som en rockestjerne – uten å måtte lære å spille et eneste instrument.",
+				shortDesc: "Headset for lydelskere som vet at god musikk starter med fantastisk lydkvalitet!",
 				price: 800,
 				stars: 5,
 				image: [
@@ -175,8 +175,8 @@ const model = {
 			{
 				title: "Skumle porselensdukker",
 				id: 424,
-				description: "Veldig skummle dukker som er faktisk litt skumlere enn chucky, men bare litt",
-				shortDesc: "Skummelere en Chucky, men bare litt:P",
+				description: "Våre skumle Porselensdukker er ikke for pyser. Disse dukkene tar skrekk til et helt nytt nivå. Inspirert av mareritt og skrekkfilmer, er disse dukkene håndlaget med uhyggelige detaljer som vil gi deg frysninger nedover ryggen. De er faktisk litt skumlere enn Chucky, men bare litt – akkurat nok til å gi deg en ekstra dose grøsninger. NB: Trenger ikke batterier.",
+				shortDesc: "Skumle porselensdukker kombinerer skjønnheten til porselenskunst med en uhyggelig vri, med glassaktige øyne og bleke ansikter som gir en grøssende atmosfære",
 				price: 666,
 				stars: 4,
 				image: [
@@ -201,8 +201,8 @@ const model = {
 			{
 				title: "Orbchess",
 				id: 426,
-				description: "The Orbchess is a chessboard with its game board in a sphere. Inspired by the Steampunk universe just like the Mécanigma, Minipunk, Toupunk or Robygrab, the OrbChess is a mobile chessboard thanks to its mechanical wheels and articulated mechanisms. It has 3 different axes of rotation to allow greater visibility during the game. Each piece of the chess set is held together by a bioplastic peg. Easily snap the pawns together to move around. Once the game is over, leave them visible or store them in the base storage box.",
-				shortDesc: "Oj",
+				description: "Orbchess er et sjakkbrett med spillets brett i en kule. Inspirert av Steampunk-universet, akkurat som Mécanigma, Minipunk, Toupunk eller Robygrab, er OrbChess et mobilt sjakkbrett takket være sine mekaniske hjul og leddede mekanismer. Det har tre forskjellige rotasjonsakser for å gi bedre oversikt under spillet. Hver brikke i sjakksettet holdes sammen av en bioplastisk pinne. Enkelt sett sammen bøndene for å flytte dem rundt. Når spillet er over, kan du enten la dem være synlige eller oppbevare dem i basens oppbevaringsboks.",
+				shortDesc: "Orbchess er et sjakkbrett i form av en kule inspirert av Steampunk-universet, som er mobilt takket være mekaniske hjul og har tre rotasjonsakser for bedre spilloversikt, med bioplastiske brikkefester for enkel montering og oppbevaringsboks for brikker når spillet er over.",
 				price: 4099,
 				stars: 5,
 				image: [
@@ -213,8 +213,8 @@ const model = {
 			{
 				title: "Sjokoladesigaretter",
 				id: 427,
-				description: "Utforsk vår deilige kolleksjon av sjokoladesigaretter – en unik og smakfull godbit for sjokoladeentusiaster",
-				shortDesc: "Nyt den delikate smaken av sjokolade uten røyk og ild.",
+				description: "Sjokoladesigaretter er en nostalgisk godbit som bringer tilbake barndomsminner. Disse deilige sjokoladestengene er formet som sigaretter, men de er 100 % tobakksfrie. Hver sjokoladesigarett er laget av førsteklasses melkesjokolade, og de er pakket i papirhylser som gir dem et autentisk sigarettutseende. Nyt den søte, smeltende smaken av sjokolade uten bekymring, og del gjerne denne klassikeren med venner for en morsom og nostalgisk opplevelse. Sjokoladesigaretter er den perfekte godbiten for dem som elsker søtsaker med et snev av barndomsminner.",
+				shortDesc: "Sjokoladesigaretter er en nostalgisk godbit laget av førsteklasses melkesjokolade og pakket i autentiske sigarettpapirhylser. De gir deg en søt smaksopplevelse uten tobakk og er perfekte for en morsom tur ned barndommens minnebane.",
 				price: 50,
 				stars: 3,
 				image: [
@@ -226,7 +226,7 @@ const model = {
 			{
 				title: "Elektrisk tannbørste for gule tenner",
 				id: 428,
-				description: "Denne tannbørsten har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
+				description: "Denne tannbørsten har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Dette er det nyeste og mest trending moten i moteverdenen, og blir blant annet brukt i 'Victoria Secret Models' og blant influensere. Glem forrige versjon av deg selv, skap ditt nye jeg!",
 				shortDesc: "Denne tannbørsten har en børsteteknologi som sprer gule kjemikaler inn i tennene dine. Dette gir gule, skinnende tenner. Glem forrige versjon av deg selv, skap ditt nye jeg!",
 				price: 1800,
 				stars: 1,
@@ -264,8 +264,8 @@ const model = {
 			{
 				title: "Mopedbil",
 				id: 431,
-				description: 'Mopedbil, også kjent som en mikrobil eller firehjuls moped, er et lite, lettkjøretøy som ligger et sted mellom en vanlig motorsykkel og en bil. Selv 16-åringer har lov til å stoppe trafikken med denne NYE rakkeren.',
-				shortDesc: "HELT NY. LOVER. :)",
+				description: 'En mopedbil er en praktisk og kompakt kjøretøytype som gir deg friheten til å utforske byen eller landsbygda. Denne lette firehjulsbilen kombinerer bekvemmeligheten av en moped med komforten og sikkerheten til en bil. Med plass til to passasjerer, lar mopedbilen deg enkelt navigere gjennom trafikken, finne parkeringsplasser, og dra på eventyr uten å måtte bekymre deg for drivstofforbruket. Enten du trenger et pålitelig transportmiddel til daglig pendling eller ønsker å cruise rundt i byen med stil, er en mopedbil det ideelle valget. Den er miljøvennlig, økonomisk og en morsom måte å komme seg rundt på!',
+				shortDesc: "Mopedbil, også kjent som en mikrobil eller firehjuls moped, er et lite, lettkjøretøy som ligger et sted mellom en vanlig motorsykkel og en bil. Selv 16-åringer har lov til å stoppe trafikken med denne NYE rakkeren.",
 				price: 196900,
 				stars: 1,
 				image: [
@@ -278,7 +278,7 @@ const model = {
 				title: "Naruto - Komplett DVD-boks",
 				id: 432,
 				description: 'Naruto er en av de mest ikoniske og elskede anime-seriene gjennom tidene, og nå kan du eie hele eventyret samlet i denne imponerende Naruto DVD-boksen. Denne samleboksen gir deg tilgang til hele Naruto-serien fra begynnelse til slutt, inkludert både Naruto og Naruto Shippuden, totalt over 700 episoder av spennende eventyr. Egenskaper: Inneholder hele Naruto-serien, inkludert Naruto og Naruto Shippuden. DVD-format med høy bilde- og lydkvalitet. Undertekster på flere språk for internasjonal tilgjengelighet.Flerfoldige DVD-er satt i en praktisk oppbevaringsboks.',
-				shortDesc: '',
+				shortDesc: 'Naruto - Komplett DVD-boks er den ultimative samlingen for Naruto-fans. Få hele serien i ett sett og bli med på Narutos bemerkelsesverdige reise fra ung aspirerende ninja til mektig shinobi',
 				price: 1999,
 				stars: 4,
 				image: [

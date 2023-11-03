@@ -1,0 +1,33 @@
+.listItem {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: auto auto 20px;
+  grid-template-areas: 
+  'title title price'
+  'image description description'
+  'stars stars stars';
+  margin: 2%;
+  border: 2px solid black;
+  padding: 1%;
+}
+.listTitle{
+  grid-area: title;
+  margin-bottom: 2%;
+    font-size: 110%;
+    font-weight: bold;
+}
+.listPrice{
+  grid-area: price;
+  justify-self: right;
+}
+.listImage{
+  grid-area: image;
+}
+.listDescription{
+  grid-area: description;
+  font-size: 80%;
+  margin-left: 2%;
+}
+.listStars{
+  grid-area: stars;
+}

@@ -13,7 +13,7 @@ function viewApp() {
         <div id='left'></div>
         <div id='innhold'>${pageView()}</div>
         <div id='right'></div>
-				<div id='footer'>Ferdsel på eget ansvar</div>
+				<div id='footer'>Copyright © [2023] Alt fra Alto. Alle rettigheter reservert.</div>
 			</div>	
     `;
 	app.innerHTML = html;
