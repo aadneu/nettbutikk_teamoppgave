@@ -14,11 +14,11 @@ const model = {
 
 		carousel: 0,
 
-		currentCategory: "Diverse",
+		currentCategory: "",
 
-		currentProduct: "0",
+		currentProduct: "",
 
-		currentView: "productList",
+		currentView: "main",
 
 		loggedIn: false,
 

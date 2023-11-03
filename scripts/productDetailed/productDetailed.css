@@ -6,10 +6,11 @@
 #productDetailedGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr;
+    /* grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr; */
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 2fr;
     grid-template-areas:
         ' title title'
-        ' rating rating'
+        ' stars stars'
         ' image price'
         ' image description'
         ' image description';
@@ -18,18 +19,24 @@
 
 .title {
     grid-area: title;
-    font-size: 50px;
+    font-size: 150%;
     font-family: 'Helvetica Neue 500', arial, sans-serif;
+    font-weight: bold;
+    
 }
 
 .stars {
-    grid-area: rating;
+    grid-area: stars;
     font-size: 120%;
+    margin-bottom: 1%;
+}
+.shoppingcart{
+    font-size: 60%;
 }
 
 .description {
     grid-area: description;
-    font-size: 80%;
+    font-size: 100%;
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -41,12 +48,15 @@
 }
 
 .price {
-    font-size: 100%;
+    font-size: 110%;
     font-family: arial, Arial, Helvetica, sans-serif;
-    border: 2px solid;
-    background-color: white;
-    margin-left: 10%;
+    /* border: 2px solid; */
+    /* background-color: rgb(207, 207, 207); */
+    margin-right: 10%;
+    margin-bottom: 5%;
     width: max-content;
+    padding: 1%;
+    justify-self: end;
 }
 
 /*

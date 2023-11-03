@@ -14,13 +14,13 @@ function productListView() {
 					<div class='listImage'><image src="${product.image}" style="width:200px"></div>
 					<div class='listDescription'>${product.description}</div>
 					<div class='listPrice'>${product.price},- ink. mva 
-							<div>
+							
 								<button onclick='viewProduct(${product.id})'>Vis</button>
 								<button onclick='addToShoppingcart(${i})'>+🛒</button>
-							</div>
+							
 							
 					</div>
-					<div>${displayStars(product)}</div>
+					<div class='listStars'>${displayStars(product)}</div>
 				</div>
       `;
 		}
