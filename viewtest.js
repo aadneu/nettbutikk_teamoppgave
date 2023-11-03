@@ -48,11 +48,21 @@ function pageView() {
 function createHeaderHTML() {
 	return /*HTML*/ `
     <image id='logo' src='${model.data.logo}' onclick="changeView('main')">
-    <div><input oninput='model.inputs.search = this.value, showSearchResults(searchFunction())' onchange='viewApp()' type='text' placeholder='Søk'>${showSearchResults(searchFunction())}</div>
-    <button onclick="viewApp()">🔍</button>
-    <button onclick="changeView('shoppingCart')">🛒${shoppingCartCounter()}</button>
-    ${isLoggedInButton()}
-     <br>
+    <div class='headerdiv'>
+		<div><input 
+				oninput='model.inputs.search = this.value, showSearchResults(searchFunction())' 
+				onchange='viewApp()' 
+				type='text' 
+				placeholder='Søk'>
+				${showSearchResults(searchFunction())}
+		</div>
+		<div class='headerbuttons'></div>
+		<div><button class='headerbuttons' onclick="viewApp()">🔍</button></div>
+		<div><button class='headerbuttons' onclick="changeView('shoppingCart')">🛒${shoppingCartCounter()}</button></div>
+		<div class='headerbuttons'> ${isLoggedInButton()}</div>
+
+	</div>
+ 
   `;
 }
 

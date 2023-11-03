@@ -1,7 +1,7 @@
 .listItem {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: auto auto 4fr;
   grid-template-areas: 
   'title title title'
   'stars stars price'
