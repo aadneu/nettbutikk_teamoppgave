@@ -141,7 +141,7 @@ const model = {
 				price: 300,
 				stars: 5,
 				image: [
-					"https://cgsentinel.com/uploads/images/2019/09/f9985ca22ff84742b73f48b36174e4ce.jpg",
+					"https://static.partyking.org/fit-in/1300x0/products/original/sombrero-for-husdjur-1.jpg",
 				],
 				category: "Tilbehør",
 				instock: true,
