@@ -100,7 +100,18 @@ const model = {
 			},
 		],
 
-		categories: ["Mat", "Tilbehør", "Merch", "Headset", 'Diverse'],
+		categories: [
+			{ name: 'Mat',
+				description: ' I vår matkategori finner du et variert utvalg av deilige og smakfulle produkter. Enten du er på jakt etter snacks, sunne alternativer, eller gourmetprodukter, har vi det du trenger for å tilfredsstille smaksløkene dine. Fra søtsaker til krydder, kaffe til te, og alt imellom, har vi et bredt utvalg av matvarer som passer for enhver anledning.'},
+			{ name: 'Tilbehør',
+				description: 'I vår tilbehørskategori finner du alt du trenger for å fullføre ditt utseende eller forbedre din daglige rutine. Dette inkluderer smykker, vesker, skjerf, solbriller, belter og andre stilige elementer som kan gi det lille ekstra til antrekket ditt. Enten du ønsker å skape en elegant look eller legge til personlige aksenter, har vi et mangfold av tilbehør å velge mellom.'},
+			{ name: 'Merch',
+				description: 'Vår merchandise-kategori er dedikert til fans av ulike merker, artister eller populære kulturer. Her kan du finne offisielle produkter som t-skjorter, plakater, krus, hettegensere og mye mer. Det er det perfekte stedet å vise din støtte til dine favorittmerker eller å finne gaver til likesinnede.'},
+			{ name: 'Headset',
+				description: ' I vår headset-kategori tilbyr vi et utvalg av høykvalitets hodetelefoner og øretelefoner for den ultimate lydopplevelsen. Enten du er en musikkentusiast, gamer eller bare elsker å lytte til lyd i høy kvalitet, har vi et utvalg av trådløse og kablede alternativer for å tilfredsstille dine behov. Fra støyreduserende hodetelefoner til sportsspesifikke øretelefoner, har vi noe for enhver lydentusiast.'},
+			{ name: 'Diverse',
+				description: 'I vår diverse kategori finner du en eklektisk samling av produkter som ikke passer inn i de andre kategoriene, men som likevel har sin egen sjarm og nytte. Dette kan inkludere gaver, dekorasjoner, gadgets, verktøy og andre interessante ting som kan være overraskende nyttige eller morsomme å utforske. Dette er stedet for skatter og unike funn som kan berike livet ditt på uventede måter.'},
+		],
 
 		about: {
 			companyDesc: "",
@@ -196,7 +207,7 @@ const model = {
 					"https://sw3310.sfstatic.io/upload_dir/shop/_thumbs/Roegmaskine-med-6-x-RGB-LEDs,-1200W--1.w695.h523.fill.jpg",
 				],
 				category: "Diverse",
-				instock: true,
+				instock: false,
 			},
 			{
 				title: "Orbchess",
@@ -246,7 +257,7 @@ const model = {
 					"https://img.fruugo.com/product/0/75/649963750_max.jpg",
 				],
 				category: "Diverse",
-				instock: true,
+				instock: false,
 			},
 			{
 				title: "Cat-set",
@@ -259,7 +270,7 @@ const model = {
 					"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNS5t6koBOWgeu6kqGiRau_4XxgflPibzxqA&usqp=CAU",
 				],
 				category: "Headset",
-				instock: true,
+				instock: false,
 			},
 			{
 				title: "Mopedbil",
@@ -297,7 +308,7 @@ const model = {
 				image: [
 					"https://arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/CIITKIIHM5HTPBPVT6ACJ5IWMM.jpg",
 				],
-				category: "Merch",
+				category: "Tilbehør",
 				instock: true,
 			},
 		],

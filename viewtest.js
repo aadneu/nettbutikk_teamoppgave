@@ -72,6 +72,9 @@ function createHeaderHTML() {
 function logOut() {
 	model.app.loggedIn = false;
 	model.app.currentUser = "";
+	model.inputs.login.email = ''
+	model.inputs.login.password = ''
+	
 	if ((model.app.currentView = "profile")) {
 		model.app.currentView = "main";
 	}
@@ -105,6 +108,3 @@ function showSearchResults(arrayOfObject){
 
 	return html;
 }
-
-//ramme rundt i bildekarusellen on hover
-//ramme rundt produktene i main view

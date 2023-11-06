@@ -13,7 +13,7 @@ function productDetailedPageView() {
 				<div><button class="shoppingcart" onclick="addToShoppingcart(${index})">Legg til i handlekurv🛒</button></div>
 			</div>
             <div class="stars"> 
-				<div>${displayStars(product)} ${displayStockStatus()}</div> 
+				<div>${displayStars(product)} ${displayStockStatus(product)}</div> 
 			</div>
             <img  id="mainPicture" src="${product.image}">
         
@@ -35,9 +35,9 @@ function displayStars(product) {
 	}
 }
 
-function displayStockStatus() {
-	let index = model.app.currentProduct;
-	if (model.data.products[index].instock == true) {
+function displayStockStatus(stockStatus) {
+	// let index = model.app.currentProduct;
+	if (stockStatus.instock == true) {
 		return `<div style='font-size: 70%'>🟢 På lager</div>`;
 	} else {
 		return `<div style='font-size: 70%'>🔴 Ikke på lager</div>`;

@@ -12,13 +12,15 @@ function createPreviewsHTML() {
 	let html = "";
 	for (let i = 0; i < model.data.products.length; i++) {
 		html += /*HTML*/ `
-		
     <div class='preview'>
-		<image src="${model.data.products[i].image}" onclick='viewProduct(${model.data.products[i].id})'>
-		<div class ='mainheader'>${model.data.products[i].title}</div>
-		<div>${model.data.products[i].shortDesc}</div>
-		<div>${displayStars(model.data.products[i])}</div>
-		<div>${model.data.products[i].price},- NOK <button onclick='viewProduct(${model.data.products[i].id})'>Vis</button></div>
+			<image src="${model.data.products[i].image}" onclick='viewProduct(${model.data.products[i].id})'>
+			<div class ='mainheader'>${model.data.products[i].title}</div>
+				<div>${model.data.products[i].shortDesc}</div>
+				<div>${displayStars(model.data.products[i])}</div>
+			<div>
+				${model.data.products[i].price},- NOK <button onclick='viewProduct(${model.data.products[i].id})'>Vis</button>
+			<div>${displayStockStatus(model.data.products[i])}</div>
+		</div>
     </div>
 		
 		`;
