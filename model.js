@@ -122,7 +122,7 @@ const model = {
 
 		products: [
 			{
-				title: "Ekte farse fra Jæren",
+				title: "Farse dinner kit",
 				id: 420,
 				description: "Lag deilige måltider med en vri av humor. Med morsomme oppskrifter, kreative ingredienser og en vitsedelingskonkurranse, blir middagen din til en latterfull opplevelse. Dette kitet er perfekt for familie- og vennemiddager, og det vil garantert sette en humoristisk tone for enhver anledning.	I tillegg er dette kitet en flott gaveidé for matentusiaster og humorfans. Gi dine kjære en unik gave som kombinerer kulinarisk nytelse med morsomme stunder rundt bordet. Oppdag gleden av å lage mat med latter, og bestill Komiske Kjøkken Farse Dinner Kit i dag for å skape minnerike måltider og smittende latter!",
 				shortDesc: "Utforsk de autentiske smakene fra den vakre Jæren-regionen i Norge med vårt nøye sammensatte dinner kit. Vi har håndplukket de ferskeste ingrediensene fra Jæren, kjent for sin rike matkultur og naturskjønnhet, og satt sammen en deilig middagspakke for deg å lage hjemme.",
