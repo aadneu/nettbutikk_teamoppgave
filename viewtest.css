@@ -16,11 +16,16 @@
     background-color: rgb(68, 177, 240);
     
     grid-area: header;
-    color: white;
     font-size: 100%;
     text-size-adjust: 2%;
     text-align: center;
+ 
 }
+/* #header>button{
+    height:40px;
+    font-size:16pt;
+} */
+
 #left{
 
     grid-area: left;
@@ -42,10 +47,16 @@
     font-size: 100%;
 }
 
-.headerdiv{
+.headerdiv {
     display: flex;
     justify-content: center;
-    font-size: 100%;
+    
+}
+
+
+.headerbuttons {
+    height:46px;
+    font-size:16pt;
 }
 
 #innhold {
@@ -69,4 +80,27 @@
 
 button {
     cursor: pointer;
+}
+
+/* .searchBar{
+    display: grid;
+    justify-content: stretch;
+    
+} */
+.dropDownSearch{
+    color: black;
+    font-size: 60%;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.searchItems{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
 }

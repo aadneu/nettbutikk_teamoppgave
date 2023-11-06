@@ -21,17 +21,27 @@
   grid-template-columns: auto auto auto;
 }
 .previews>div {
+
   flex-shrink: 1;
 }
 .container>img {
   /* opacity: 50%; */
-  z-index: 2;
   flex-grow: 1;
   cursor: pointer;
+  width: 50px;
   /* height: fit-content; */
 }
 
-.sidepic {
-  opacity: 50%;
-  z-index: 1;
+.mainheader{
+  font-weight: bold;
+}
+
+.container>img:hover {
+transform: scale(1.1);
+border: 3px groove grey;
+}
+
+.preview {
+  padding: 4px;
+  border: 1px solid black;
 }

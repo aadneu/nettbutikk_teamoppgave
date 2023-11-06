@@ -13,7 +13,7 @@ function viewApp() {
         <div id='left'></div>
         <div id='innhold'>${pageView()}</div>
         <div id='right'></div>
-				<div id='footer'>Copyright © [2023] Alt fra Alto. Alle rettigheter reservert.</div>
+				<div id='footer'>Copyright © [2023] Alt fra Aalto. Alle rettigheter reservert.</div>
 			</div>	
     `;
 	app.innerHTML = html;
@@ -49,17 +49,20 @@ function createHeaderHTML() {
 	return /*HTML*/ `
     <image id='logo' src='${model.data.logo}' onclick="changeView('main')">
     <div class='headerdiv'>
-		<div><input 
+		<div class='searchBar' style='text-align: left'><input 
+				style="height:40px;font-size:16pt;"
 				oninput='model.inputs.search = this.value, showSearchResults(searchFunction())' 
 				onchange='viewApp()' 
 				type='text' 
-				placeholder='Søk'>
-				${showSearchResults(searchFunction())}
+				placeholder='Søk'
+				value= '${model.inputs.search}'>
+				<div class='dropDownSearch'>${searchFunction2()}</div>
+				
 		</div>
 		<div class='headerbuttons'></div>
-		<div><button class='headerbuttons' onclick="viewApp()">🔍</button></div>
-		<div><button class='headerbuttons' onclick="changeView('shoppingCart')">🛒${shoppingCartCounter()}</button></div>
-		<div class='headerbuttons'> ${isLoggedInButton()}</div>
+		<button class='headerbuttons' onclick="searchFunction()">🔍</button>
+		<button class='headerbuttons' onclick="changeView('shoppingCart')">🛒${shoppingCartCounter()}</button>
+			${isLoggedInButton()}
 
 	</div>
  
@@ -77,10 +80,10 @@ function logOut() {
 
 function isLoggedInButton() {
 	return model.app.loggedIn
-		? `<button onclick="changeView('profile')">*Min side icon*</button> 
-        <button onclick="logOut()">*Logg ut icon*</button>`
-		: `<button onclick="changeView('newuser')">*Registrer icon*</button>
-        <button onclick="changeView('login')">*Login Icon*</button>
+		? `<button class='headerbuttons' onclick="changeView('profile')">Min side ☗</button> 
+        <button class='headerbuttons' onclick="logOut()">Logg ut 🠔</button>`
+		: `<button class='headerbuttons' onclick="changeView('newuser')">Ny bruker 👤</button>
+        <button class='headerbuttons' onclick="changeView('login')">Login 🠖</button>
         `;
 }
 
@@ -97,8 +100,11 @@ function showSearchResults(arrayOfObject){
 	let html = ''
 
 	for(let i = 0; i < arrayOfObject.length; i++) {
-		html += `<div onclick='viewProduct(${arrayOfObject[i].id})'>${arrayOfObject[i].title}</div>`
+		html += `<div class='searchItems' onclick='viewProduct(${arrayOfObject[i].id}), clearSearch()'>${arrayOfObject[i].title}</div>`
 	}
 
 	return html;
 }
+
+//ramme rundt i bildekarusellen on hover
+//ramme rundt produktene i main view

@@ -15,7 +15,7 @@ function createPreviewsHTML() {
 		
     <div class='preview'>
 		<image src="${model.data.products[i].image}" onclick='viewProduct(${model.data.products[i].id})'>
-		<div>${model.data.products[i].title}</div>
+		<div class ='mainheader'>${model.data.products[i].title}</div>
 		<div>${model.data.products[i].shortDesc}</div>
 		<div>${displayStars(model.data.products[i])}</div>
 		<div>${model.data.products[i].price},- NOK <button onclick='viewProduct(${model.data.products[i].id})'>Vis</button></div>
@@ -47,13 +47,13 @@ function createCarouselHTML() {
 	let html = /*HTML*/ `
 	<div class='container' >
 	<button onclick="carouselLeft()">←</button>
-	<image onclick='viewProduct(${leftIndex.id})' class='sidepic' src="${
+	<image onclick='viewProduct(${leftIndex.id})' src="${
 		leftIndex.image
 	}">
 	<image onclick='viewProduct(${
 		model.data.products[model.app.carousel].id
 	})'  src="${model.data.products[model.app.carousel].image}">
-	<image onclick='viewProduct(${rightIndex.id})' class='sidepic' src="${
+	<image onclick='viewProduct(${rightIndex.id})' src="${
 		rightIndex.image
 	}">
 	<button onclick="carouselRight()">→</button>

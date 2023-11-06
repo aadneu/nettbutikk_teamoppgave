@@ -30,6 +30,17 @@ function searchFunction(){
 	return results
 }
 
+function searchFunction2(){
+	if (model.inputs.search !== '')	return `${showSearchResults(searchFunction())}`
+		else return ``
+
+}
+
+function clearSearch() {
+	model.inputs.search = ''
+	viewApp();
+}
+
 //  function createSearchResultList(){
 // 	let showSearchResult;
 // 	for(let i = 0; i < results.length; i++){
