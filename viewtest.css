@@ -13,13 +13,12 @@
 }
 
 #header {
-    background-color: rgb(68, 177, 240);
-    
+    background: rgb(175,225,255);
+    background: radial-gradient(circle, rgba(175,225,255,1) 37%, rgba(68,177,240,1) 55%);
     grid-area: header;
     font-size: 100%;
     text-size-adjust: 2%;
     text-align: center;
- 
 }
 /* #header>button{
     height:40px;
@@ -31,10 +30,21 @@
     grid-area: left;
 }
 #right{
-    background-color: rgb(68, 177, 240);
+    background-color: #44b1f0;
     grid-area: right;
 }
+#footer {
+    background-color: rgba(68, 177, 240, 0.76);
+    font-size:80%;
+    text-align: center;
+    grid-area: footer;
+    padding: 1%;
 
+}
+#innhold {
+    background-color: rgba(68, 177, 240, 0.76);
+    grid-area: innhold;
+}
 #meny {
 
     grid-area: meny;
@@ -59,19 +69,9 @@
     font-size:16pt;
 }
 
-#innhold {
-    background-color: olivedrab;
-    grid-area: innhold;
-}
 
-#footer {
 
-    font-size:80%;
-    text-align: center;
-    grid-area: footer;
-    padding: 1%;
 
-}
 
 #logo {
     cursor:pointer;

@@ -1,6 +1,6 @@
 function mainView() {
 	let html = ``;
-
+	// model.app.carousel = Math.floor(Math.random() * model.data.products.length)
 	html += createCarouselHTML();
 
 	html += `<div class='previews'>${createPreviewsHTML()}</div>`;

@@ -2,8 +2,8 @@ const newuser = model.inputs.profile.newuser;
 const existingusers = model.data.users;
 let outputNewUser = "";
 
-const userCreator = ( name,  password,  email,  address,  zipcode,  city,  phone,  customerid) => {
-  return { name, password, email, address, zipcode, city, phone, customerid };
+const userCreator = ( name,  password,  email,  address,  zipcode,  city,  phone,  customerid, purchases) => {
+  return { name, password, email, address, zipcode, city, phone, customerid, purchases };
 };
 
 function addNewUser() {
@@ -16,7 +16,8 @@ function addNewUser() {
       newuser.zipcode,
       newuser.city,
       newuser.phone,
-      newuser.customerid
+      newuser.customerid,
+      newuser.purchases,
     )
   );
 }

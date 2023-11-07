@@ -7,7 +7,7 @@ function productDetailedPageView() {
 	html = /*HTML*/ `
     <div id='productDetailedGrid'>
             <div class="title">${product.title}</div>
-			<div class="description">${product.description}.</div>
+			<div class="description">${product.description}</div>
 			<div class='price'>
             	<div>${product.price},- inkl. mva </div>
 				<div><button class="shoppingcart" onclick="addToShoppingcart(${index})">Legg til i handlekurv🛒</button></div>
@@ -39,6 +39,7 @@ function displayStockStatus(stockStatus) {
 	// let index = model.app.currentProduct;
 	if (stockStatus.instock == true) {
 		return `<div style='font-size: 70%'>🟢 På lager</div>`;
+		
 	} else {
 		return `<div style='font-size: 70%'>🔴 Ikke på lager</div>`;
 	}

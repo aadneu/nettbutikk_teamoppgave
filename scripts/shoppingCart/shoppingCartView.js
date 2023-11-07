@@ -45,7 +45,7 @@ ${showNewPrice()}
 
 <tr class="testings">
 <td colspan="4"></td>
-<td colspan="2"><button class="tilKassen">Til kassen</button></td>
+<td colspan="2"><button onclick='makePurchase()' class="tilKassen">Kjøp</button></td>
 </tr>
 `;
 

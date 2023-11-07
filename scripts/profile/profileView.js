@@ -12,7 +12,7 @@ function profileView() {
         <div>${showToggleButton()}</div></div>
             <div id='høyre'>
         <div class='profileheaders'>Mine ordrer:</div>
-        <div>${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}${listOrders()}</div>
+        <div>${listOrders()}</div>
             </div>
     </div>   
     `;
@@ -43,9 +43,28 @@ function listUserInfo(){
     }
 
     function listOrders() {
+
         let orderList = "";
-        for (let i = 0; i < model.data.profile.purchases.length; i++) {
-            orderList += `<div><li>${model.data.profile.purchases[i]}</li></div>`;
+        for (let user of model.data.users) {
+            if (user.name == model.app.currentUser) {
+                for (let i = 0; i < user.purchases.length; i++){
+                    // hver ordre
+
+                    orderList += `<div style="border-bottom: 2px solid black">`
+
+                    for(let j = 1; j < user.purchases[i].length; j++){
+                        //hver ting inni ordren
+                    
+                        orderList += `<li>${user.purchases[i][j].count}x ${user.purchases[i][j].title}</li>`
+                    }
+                    orderList += `sumtotal: ${user.purchases[i][0]} </div>`
+                }
+            }
+            
         }
         return orderList;
+
+        // for (let i = 0; i < model.data.profile.purchases.length; i++) {
+        //     orderList += `<div><li>${model.data.profile.purchases[i]}</li></div>`;
+        // }
     }

@@ -40,3 +40,15 @@ items.splice(0, items.length);
 model.inputs.shoppingCart.rabattkode = '';
 updateSum();
 }
+
+function makePurchase() {
+    if (model.app.loggedIn){
+        let purchase = [model.inputs.shoppingCart.total, ...model.inputs.shoppingCart.items]
+        for (let user of model.data.users) {
+            user.name == model.app.currentUser ? user.purchases.push(purchase) : ''
+        }
+        model.inputs.shoppingCart.items = [];
+        emptyAll();
+    } else return;
+}
+
