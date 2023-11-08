@@ -6,7 +6,7 @@ function productListView() {
 	for (let i = 0; i < model.data.products.length; i++) {
 		let product = model.data.products[i];
 		if (
-			product.category.toLowerCase() == model.app.currentCategory.toLowerCase()
+			product.category.toLowerCase() == model.app.currentCategory.toLowerCase() || model.app.currentCategory == 'Alle produkter'
 		) {
 			html += /*html*/ `
 				<div class='listItem'>

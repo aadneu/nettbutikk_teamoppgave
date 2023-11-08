@@ -105,6 +105,7 @@ const model = {
 		],
 
 		categories: [
+			{ name: 'Alle produkter', description: ''},
 			{ name: 'Mat',
 				description: ' I vår matkategori finner du et variert utvalg av deilige og smakfulle produkter. Enten du er på jakt etter snacks, sunne alternativer, eller gourmetprodukter, har vi det du trenger for å tilfredsstille smaksløkene dine. Fra søtsaker til krydder, kaffe til te, og alt imellom, har vi et bredt utvalg av matvarer som passer for enhver anledning.'},
 			{ name: 'Tilbehør',

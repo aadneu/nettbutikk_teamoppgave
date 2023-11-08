@@ -20,7 +20,7 @@
 function aboutView() {
 	let html = ``;
 	html = /*HTML*/ `
-  <div class='centercontentabout'>
+  <div class='centercontentabout' style='background-color: olive'>
   
   <div class='aboutheader'>Velkommen til Alt fra Aalto, der rare og underlige ting er vår lidenskap!</div>
   <div class='aboutheader'>Vår historie</div>

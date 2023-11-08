@@ -86,7 +86,7 @@ function isLoggedInButton() {
 		? `<button class='headerbuttons' onclick="changeView('profile')">Min side ☗</button> 
         <button class='headerbuttons' onclick="logOut()">Logg ut 🠔</button>`
 		: `<button class='headerbuttons' onclick="changeView('newuser')">Ny bruker 👤</button>
-        <button class='headerbuttons' onclick="changeView('login')">Login 🠖</button>
+        <button class='headerbuttons' onclick="changeView('login')">Logg inn 🠖</button>
         `;
 }
 
